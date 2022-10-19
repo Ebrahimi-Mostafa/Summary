@@ -1,3 +1,7 @@
+/////////////
+SESSION 1
+////////////
+
 clc ->  clear console
 ; -> don't print
 
@@ -9,9 +13,26 @@ clearvars -except x y -> clear all variables except x and y
 [x, y; z, w] -> x y
                 z w
 size(Matrix) -> row col
+length(Matrix) -> max(size(Matrix))
 
 command + f1 -> help
 
+save('address/filename') -> save all variables
 save('address/filename', 'x', 'y') -> save variables x and y to address/filename
 load('address/filename') -> load variables from address/filename
 load('address/filename', 'x', 'y') -> load just variables x and y from address/filename
+
+% -> comment
+%{ comment %} -> comment
+%% -> new section
+
+
+rand(x,y) -> random matrix x by y
+randn(x,y) -> random matrix x by y with normal distribution
+
+x:y -> generate x to y with step 1
+x:k:y -> generate x to y with step k
+
+filename -> run filename.m
+x' -> transpose x
+sprintf("sum = %d", sum) -> print sum = sum
