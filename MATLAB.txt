@@ -14,6 +14,7 @@ clearvars -except x y -> clear all variables except x and y
                 z w
 size(Matrix) -> row col
 length(Matrix) -> max(size(Matrix))
+x' -> transpose x
 
 command + f1 -> help
 
@@ -34,5 +35,20 @@ x:y -> generate x to y with step 1
 x:k:y -> generate x to y with step k
 
 filename -> run filename.m
-x' -> transpose x
+
 sprintf("sum = %d", sum) -> print sum = sum
+
+figure -> open new figure
+figure('Name', 'abc') -> open new figure with title 'abc'
+hold on -> hold on current plot on figure
+close all -> close all figures
+subplot(2,3,1) -> 2x3 grid, 1st plot
+plot(x,y) -> plot x and y on figure
+stem(x,y) -> plot x and y on figure with stem
+arguman for plot or stem:
+    'Color', 'r' -> show red wave
+    'LineWidth', 2 -> show wave with width 2
+
+~= -> not equal
+
+function [x, y] = function_name(a, b) -> function with 2 input and 2 output 
