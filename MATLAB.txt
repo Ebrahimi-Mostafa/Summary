@@ -6,6 +6,7 @@ clc ->  clear console
 ; -> don't print
 
 clear -> clear all variables
+clear x y -> clear x an 
 clearvars -> clear all variables
 clearvars x y -> clear variables x and y
 clearvars -except x y -> clear all variables except x and y
@@ -48,7 +49,25 @@ stem(x,y) -> plot x and y on figure with stem
 arguman for plot or stem:
     'Color', 'r' -> show red wave
     'LineWidth', 2 -> show wave with width 2
+xlim([0, 10]) -> set x axis limit from 0 to 10
+ylim([0, 10]) -> set y axis limit from 0 to 10
 
 ~= -> not equal
 
 function [x, y] = function_name(a, b) -> function with 2 input and 2 output 
+
+zeros(x,y) -> x by y matrix with all zeros
+ones(x,y) -> x by y matrix with all ones
+
+round(x) -> round x
+round(x, n) -> round x with n digits after point
+
+loop from start to end with step:
+    for i = start:step:end
+        % do something
+    end
+
+
+/////////////
+SESSION 2
+////////////
