@@ -12,13 +12,14 @@ Source: https://www.youtube.com/watch?v=BnfJJtcVFPo&list=RDLVwwtoRHn9bIA&index=3
 esc -> change mode from INSERT to COMMAND mode
 
 COMMAND mode:
+    :wq -> write and quit
+    :q! -> quit without saving
+
+NORMAL mode:
     i -> insert mode
 
     x -> delete one character the select one
     X -> delete one character the previous one
-    
-    :wq -> write and quit
-    :q! -> quit without saving
 
     
     r -> goto replace mode for one character(listening to new character for replace)
