@@ -77,3 +77,17 @@ NORMAL mode:
 Part 2
 Source: https://www.youtube.com/watch?v=7WB7DGic9nM
 //////////////////
+
+NORMAL mode:
+    syntax on -> enable syntax highlight
+    set number -> enable line number
+    set nonumber -> disable line number
+    %(on bracket) -> goto the matching bracket
+
+    v -> visual mode(for select)
+
+VISUAL mode:
+    in html:
+        i , t -> select inner tag
+        a , t -> select all tag
+        
