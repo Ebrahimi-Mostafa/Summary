@@ -44,6 +44,8 @@ cntrl + b :
         :setw synchronize-panes on -> synchronize all panes in current window
         :setw synchronize-panes off -> desynchronize all panes in current window
 
+        :set -g status off -> hide status bar
+
     z -> zoom in on current pane
     z -> zoom out on current pane
 
