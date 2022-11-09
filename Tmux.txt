@@ -1,0 +1,58 @@
+//////////////////////////
+source: https://www.youtube.com/watch?v=En4wcQnY2Og&list=WL&index=7&t=651s
+jadi tmux
+**************************
+
+pane < window < session
+
+tmux att -t 0 -> open(attach) session 0
+tmux attach -t 0 -> open(attach) session 0
+tmux ls -> list sessions
+tmux new -s X -> create new session named X
+
+cntrl + b :
+    % -> split current pane into two, left and right
+    " -> split current pane into two, top and bottom
+    
+    t -> show time
+    
+    
+    rigth arrow -> move to right pane
+    left arrow -> move to left pane
+    up arrow -> move to top pane
+    down arrow -> move to bottom pane
+
+    cntrl + right arrow -> resize current pane to right
+    cntrl + left arrow -> resize current pane to left
+    cntrl + up arrow -> resize current pane to top
+    cntrl + down arrow -> resize current pane to bottom
+    esc + right arrow -> resize current pane to right
+    esc + left arrow -> resize current pane to left
+    esc + up arrow -> resize current pane to top
+    esc + down arrow -> resize current pane to bottom
+
+    COMMAND:
+        :resize-pane -D -> Resizes the current pane down
+        :resize-pane -U -> Resizes the current pane up
+        :resize-pane -L -> Resizes the current pane left
+        :resize-pane -R -> Resizes the current pane right
+        :resize-pane -D 10 -> Resizes the current pane down by 10 cells
+        :resize-pane -U 10 -> Resizes the current pane up by 10 cells
+        :resize-pane -L 10 -> Resizes the current pane left by 10 cells
+        :resize-pane -R 10 -> Resizes the current pane right by 10 cells
+
+        :setw synchronize-panes on -> synchronize all panes in current window
+        :setw synchronize-panes off -> desynchronize all panes in current window
+
+    z -> zoom in on current pane
+    z -> zoom out on current pane
+
+    c -> create new window
+    , -> rename current window
+    w -> list windows
+
+    d -> detach from current session
+
+**************************
+end of source
+//////////////////////////
