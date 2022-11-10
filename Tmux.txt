@@ -52,6 +52,7 @@ cntrl + b :
     c -> create new window
     , -> rename current window
     w -> list windows
+    & -> kill current window
 
     d -> detach from current session
 
