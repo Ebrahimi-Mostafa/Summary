@@ -53,6 +53,7 @@ cntrl + b :
     , -> rename current window
     w -> list windows
     & -> kill current window
+    x -> kill current pane
 
     d -> detach from current session
 
