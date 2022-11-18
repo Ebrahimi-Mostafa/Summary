@@ -23,6 +23,7 @@ save('address/filename') -> save all variables
 save('address/filename', 'x', 'y') -> save variables x and y to address/filename
 load('address/filename') -> load variables from address/filename
 load('address/filename', 'x', 'y') -> load just variables x and y from address/filename
+load filename -> load variables from filename
 
 % -> comment
 %{ comment %} -> comment
@@ -71,3 +72,35 @@ loop from start to end with step:
 /////////////
 SESSION 2
 ////////////
+
+matrix = [1 2 3; 4 5 6; 7 8 9] -> 3x3 matrix
+matrix(1, 2) -> 2nd element of 1st row
+
+addrss = 'address' -> address
+name = 'filename' -> set name to filename
+path = [address, '/', name] -> path = 'address/filename'      //concatenate strings
+
+cell = {1, 2, 3; 4, 5, 6; 7, 8, 9} -> 3x3 cell
+cell{1, 2} -> 2nd element of 1st row
+
+struct = struct('name', 'ali', 'age', 20) -> struct with (name and age) fields and values (ali and 20)
+
+st.name = 'ali' -> add name field to st struct with value ali
+st.age = 20 -> add age field to st struct with value 20
+
+dir('address') -> list files in address
+
+cell2mat(cell) -> convert cell to matrix
+
+imread('address') -> read image from address
+imshow(image) -> show image
+
+imresize(pic, [x, y]) -> resize pic to x by y scale
+rgb2gray(pic) -> convert pic to gray scale
+im2bw(pic) -> convert pic to black and white
+
+uigetfile -> open file dialog
+uigetfile({'*.jpg;*.png}) -> open file dialog with filter(jpg and png)
+uigetfile({'*.jpg;*.png}, 'Select an image') -> open file dialog with filter(jpg and png) and title 'Select an image'
+
+graythresh(pic) -> find threshold of pic(a number between 0 and 1 for making pic binary)
