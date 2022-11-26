@@ -104,3 +104,24 @@ uigetfile({'*.jpg;*.png}) -> open file dialog with filter(jpg and png)
 uigetfile({'*.jpg;*.png}, 'Select an image') -> open file dialog with filter(jpg and png) and title 'Select an image'
 
 graythresh(pic) -> find threshold of pic(a number between 0 and 1 for making pic binary)
+im2bw(picture, threshold) -> convert picture to binary with threshold
+bwareaopen(BW,P) -> removes all connected components (objects) that have fewer than P pixels from the binary image BW
+regionprops(BW, "BoundingBox") -> find bounding box of objects in BW
+rectangle('Position', [x, y, w, h], "EdgeColor", "r") -> draw rectangle with x, y, w, h and red color
+
+[r, c] = find(BW == number) -> find row and column of number in BW
+corr2(pic1, pic2) -> correlation of pic1 and pic2 2D
+
+value, index = max(array) -> find max value and index of array
+value, index = min(array) -> find min value and index of array
+
+cell2mat(cell) -> convert cell to matrix
+matrix = [matrix 3] -> add 3 to matrix
+
+file = fopen('address', 'wt') -> open file in address with write and text mode
+fprintf(file, "text") -> write text to file
+
+
+/////////////
+end of SESSION 2
+////////////
