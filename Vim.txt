@@ -83,10 +83,15 @@ NORMAL mode:
     set number -> enable line number
     set nonumber -> disable line number
     %(on bracket) -> goto the matching bracket
+    A(a + shift) -> go to enable mode and jump to end of line
 
     v -> visual mode(for select)
 
 VISUAL mode:
+    select some lines, :sort -> sort those lines
+
+    select some lines, : normal COMMANDS -> in noraml mode do COMMANDS in these lines
+
     in html:
         i , t -> select inner tag
         a , t -> select all tag
