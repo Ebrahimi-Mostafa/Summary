@@ -79,20 +79,53 @@ Source: https://www.youtube.com/watch?v=7WB7DGic9nM
 //////////////////
 
 NORMAL mode:
+    %(on bracket) -> goto the matching bracket
+    A(a + shift) -> go to insert mode and jump to end of line
+    shift + . -> change indent
+    shift + , -> change indent
+    
+    control + w -> switch between windows
+
+    !! -> wait for command and run it in terminal and print the result in vim 
+
+
+COMMAND mode:
     syntax on -> enable syntax highlight
     set number -> enable line number
     set nonumber -> disable line number
-    %(on bracket) -> goto the matching bracket
-    A(a + shift) -> go to enable mode and jump to end of line
+    set autoindent
+    colorscheme -> change theme
+
+    Explore -> open file explorer
+    Vexplore -> open file explorer in vertical mode
+    Sexplore -> open file explorer in horizontal mode
+
+    split -> split window
+    vsplit -> split window in vertical mode
+
+    !COMMAND -> run COMMAND in terminal
+
+
+
+
+
+
 
     v -> visual mode(for select)
 
 VISUAL mode:
-    select some lines, :sort -> sort those lines
+    select some lines then type  :sort -> sort those lines
 
-    select some lines, : normal COMMANDS -> in noraml mode do COMMANDS in these lines
+    select some lines then type  : normal COMMANDS -> in normal mode do COMMANDS in these lines
 
     in html:
         i , t -> select inner tag
         a , t -> select all tag
         
+
+
+
+//////////////////
+Part 3
+Source: https://www.youtube.com/watch?v=wwtoRHn9bIA&t=3s
+//////////////////
