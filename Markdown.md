@@ -1,5 +1,10 @@
 <!-- source: https://commonmark.org/help/tutorial/ -->
 
+<!-- other: 
+https://commonmark.org/help/
+https://www.markdowntutorial.com
+https://itsfoss.com/markdown-guide/ -->
+
 # Contents
 - [Intro](#intro)
 - [Emphasis](#emphasis)
