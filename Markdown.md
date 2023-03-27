@@ -11,6 +11,8 @@ https://itsfoss.com/markdown-guide/ -->
 - [Paragraphs](#paragraphs)
 - [Headings](#headings)
 - [Blockquotes](#blockquotes)
+- [Lists](#lists)
+- [Links](#links)
 
 
 # Intro
@@ -51,3 +53,31 @@ You can optionally add more `#` at the end to close the header. You don’t need
 ...
 
 # Blockquotes
+To create a blockquote, start a line with greater than `>` followed by an optional space.  
+`>` for blockquotes.  
+`>>` for nested blockquotes.  
+`>>>` for nested blockquotes.  
+
+> This is a blockquote
+>
+>> This is a nested blockquote
+>>
+>>> This is a nested blockquote
+
+# Lists
+`*` or `-` or `+` --> unordered list.  
+`.` or `)` --> ordered list.
+
+- Item 1  
+- Item 2
+    - Item 2a
+    - Item 2b
+- Item 3
+
+7. Item 7
+8. Item 8
+    * Item 8a
+    * Item 8b
+
+
+# Links
