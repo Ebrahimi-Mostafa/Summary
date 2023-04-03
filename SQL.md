@@ -4,7 +4,9 @@
     - [ALTER](#alter)
     - [DROP](#drop)
 - [DML (Data Manipulation Language)](#dml-data-manipulation-language)
-
+    - [SELECT](#select)
+    - [UNION](#union)
+    - [EXCEPT](#except)
 <!-- ch5-part1.mp4 -->
 
 ## `DDL (Data Definition Language)`
@@ -63,14 +65,16 @@ We use these tables for executing queries on the database.
     Boats (bid: integer, bname: string, color: string)  
     Reserves (sid: integer, bid: integer, day: date)
 
+<p id="select"></p>
+
 - `SELECT`
 ```sql
 SELECT [DISTINCT] col1, col2, ...  
 FROM table_name;
 WHERE condition; -- optional
 ```
-***Note***: SELECT `*` selects every column in the table.  
-***Note***: SELECT `DISTINCT` selects only unique values.
+***NOTE***: SELECT `*` selects every column in the table.  
+***NOTE***: SELECT `DISTINCT` selects only unique values.
 
 _example_:
 ```sql
@@ -78,3 +82,55 @@ SELECT S.sname, R.bid, R.day
 FROM Sailors S, Reserves R
 WHERE S.sid = R.sid AND S.rating > 7;
 ```
+
+***NOTE***: We can have expressions in the SELECT clause.  
+***NOTE***: `AS` and `=` are two ways to rename a column.
+
+_example_:
+```sql
+SELECT 2*S.rating AS rate1, rate2 = S.rating / 2
+FROM Sailors S;
+```
+
+***NOTE***: `LIKE` is used to match a pattern.  
+***NOTE***: `_` matches any single character and `%` matches 0 or more characters.
+
+_example_:
+```sql
+SELECT S.sname
+FROM Sailors S
+WHERE S.sname LIKE 'B_%B';
+```
+
+<p id="union"></p>
+
+- `UNION`
+
+```sql
+SELECT S.sid
+FROM Sailors S, Reserves R, Boats B
+WHERE S.sid = R.sid AND R.bid = B.bid AND B.color = 'red'
+UNION
+SELECT S.sid
+FROM Sailors S, Reserves R, Boats B
+WHERE S.sid = R.sid AND R.bid = B.bid AND B.color = 'green';
+```
+
+***NOTE***: `UNION` deletes duplicate rows. We can use `UNION ALL` to keep duplicates.
+
+
+<p id="except"></p>
+
+- `EXCEPT`
+
+```sql
+SELECT S.sid
+FROM Sailors S, Reserves R, Boats B
+WHERE S.sid = R.sid AND R.bid = B.bid AND B.color = 'red'
+EXCEPT
+SELECT S.sid
+FROM Sailors S, Reserves R, Boats B
+WHERE S.sid = R.sid AND R.bid = B.bid AND B.color = 'green';
+```
+
+***NOTE***: `EXCEPT` deletes duplicate rows. We can use `EXCEPT ALL` to keep duplicates.
