@@ -7,6 +7,8 @@
     - [SELECT](#select)
     - [UNION](#union)
     - [EXCEPT](#except)
+    - [INTERSECT](#intersect)
+    - [Nested Queries](#nested-queries)
 <!-- ch5-part1.mp4 -->
 
 ## `DDL (Data Definition Language)`
@@ -134,3 +136,24 @@ WHERE S.sid = R.sid AND R.bid = B.bid AND B.color = 'green';
 ```
 
 ***NOTE***: `EXCEPT` deletes duplicate rows. We can use `EXCEPT ALL` to keep duplicates.
+
+<p id="intersect"></p>
+
+- `INTERSECT`
+
+```sql
+SELECT S.sid
+FROM Sailors S, Reserves R, Boats B
+WHERE S.sid = R.sid AND R.bid = B.bid AND B.color = 'red'
+INTERSECT
+SELECT S.sid
+FROM Sailors S, Reserves R, Boats B
+WHERE S.sid = R.sid AND R.bid = B.bid AND B.color = 'green';
+```
+
+***NOTE***: `INTERSECT` deletes duplicate rows. We can use `INTERSECT ALL` to keep duplicates.
+
+
+<p id="nested-queries"></p>
+
+- `Nested Queries`
