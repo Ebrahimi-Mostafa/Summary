@@ -16,6 +16,11 @@
         - [ANY & ALL](#any--all)
     - [EXCEPT](#except)
     - [DIVISION](#division)
+    - [Aggregate Operators](#aggregate-operators)
+        - [COUNT](#count)
+        - [SUM](#sum)
+        - [AVG](#avg)
+        - [MIN & MAX](#min--max)
 
 <!-- ch5-part1.mp4 -->
 
@@ -299,3 +304,73 @@ WHERE NOT EXISTS (SELECT B.bid
 ```
 
 <!-- ch5-part2.mp4 -->
+
+<br>
+<p id="aggregate-operators"></p>
+
+- `Aggregate Operators`  
+Aggregate operators are used to compute a single value from a set of values.
+
+<br>
+<p id="count"></p>
+
+- `COUNT`  
+COUNT(*) returns the number of rows in the table.  
+COUNT(column) returns the number of non-null values in the column.  
+COUNT(DISTINCT column) returns the number of distinct values in the column.
+    
+```sql
+SELECT COUNT(*)
+FROM Sailors;
+
+SELECT COUNT(S.name)
+FROM Sailors S;
+
+SELECT COUNT(DISTINCT S.name)
+FROM Sailors S;
+```
+
+<br>
+<p id="sum"></p>
+
+- `SUM`  
+SUM(column) returns the sum of the values in the column.  
+SUM(DISTINCT column) returns the sum of the distinct values in the column.
+
+```sql
+SELECT SUM(S.age)
+FROM Sailors S;
+
+SELECT SUM(DISTINCT S.age)
+FROM Sailors S;
+```
+
+<br>
+<p id="avg"></p>
+
+- `AVG`  
+AVG(column) returns the average of the values in the column.  
+AVG(DISTINCT column) returns the average of the distinct values in the column.  
+
+```sql
+SELECT AVG(S.age)
+FROM Sailors S;
+
+SELECT AVG(DISTINCT S.age)
+FROM Sailors S;
+```
+
+<br>
+<p id="min--max"></p>
+
+- `MIN & MAX`
+MIN(column) returns the minimum value in the column.
+MAX(column) returns the maximum value in the column.
+
+```sql
+SELECT MIN(S.age)
+FROM Sailors S;
+
+SELECT MAX(S.age)
+FROM Sailors S;
+```
