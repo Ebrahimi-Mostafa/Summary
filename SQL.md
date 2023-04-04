@@ -18,6 +18,8 @@
     - [DIVISION](#division)
 
 <!-- ch5-part1.mp4 -->
+
+
 ## `DDL (Data Definition Language)`
 <p id="create"></p>
 
@@ -295,3 +297,5 @@ WHERE NOT EXISTS (SELECT B.bid
                   )
 -- Find sailors who’ve reserved all boats.
 ```
+
+<!-- ch5-part2.mp4 -->
