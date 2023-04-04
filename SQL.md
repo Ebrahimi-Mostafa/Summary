@@ -15,6 +15,7 @@
         - [UNIQUE & NOT UNIQUE](#unique)
         - [ANY & ALL](#any--all)
     - [EXCEPT](#except)
+    - [DIVISION](#division)
 
 <!-- ch5-part1.mp4 -->
 ## `DDL (Data Definition Language)`
@@ -260,4 +261,37 @@ WHERE S.rating > ANY (SELECT S1.rating
 <br>
 <p id="EXCEPT"></p>
 
-- `EXCEPT`
+- `EXCEPT`  
+`EXCEPT` returns the rows in the first query that are not in the second query.
+
+```sql
+SELECT S.sid
+FROM Sailors S
+WHERE S.rating > 7
+EXCEPT
+SELECT S.sid
+FROM Sailors S
+WHERE S.age > 30;
+```
+
+<br>
+<p id="DIVISION"></p>
+
+- `DIVISION`
+There isn't a division operator in SQL. We should use some tricks to do division.
+
+
+```sql
+SELECT S.name
+FROM Sailors S
+WHERE NOT EXISTS (SELECT B.bid
+                  FROM Boats B
+
+                  EXCEPT
+
+                  SELECT R.bid
+                  FROM Reserves R
+                  WHERE R.sid = S.sid);
+                  )
+-- Find sailors who’ve reserved all boats.
+```
