@@ -289,7 +289,7 @@ There isn't a division operator in SQL. We should use some tricks to do division
 
 
 ```sql
-SELECT S.name
+SELECT S.name -- First Method
 FROM Sailors S
 WHERE NOT EXISTS (SELECT B.bid
                   FROM Boats B
@@ -300,6 +300,15 @@ WHERE NOT EXISTS (SELECT B.bid
                   FROM Reserves R
                   WHERE R.sid = S.sid);
                   )
+
+SELECT S.name -- Second Method
+FROM Sailors S
+WHERE NOT EXISTS (SELECT B.bid
+                  FROM Boats B
+                  WHERE NOT EXISTS (SELECT R.bid
+                                    FROM Reserves R
+                                    WHERE R.sid = S.sid AND R.bid = B.bid));
+```
 -- Find sailors who’ve reserved all boats.
 ```
 
