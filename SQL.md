@@ -187,8 +187,8 @@ WHERE S.name IN ('Alice', 'Bob', 'Charlie');
 <p id="exists--not-exists"></p>
 
 - `EXISTS & NOT EXISTS`  
-`EXISTS`: returns true if the subquery is _not empty_.
-`NOT EXISTS`: returns true if the subquery is _empty_.  
+`EXISTS`: returns true if the subquery is _not empty_.  
+`NOT EXISTS`: returns true if the subquery is _empty_.   
 
 _example_:
 ```sql
