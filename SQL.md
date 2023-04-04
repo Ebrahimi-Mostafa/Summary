@@ -9,8 +9,10 @@
     - [EXCEPT](#except)
     - [INTERSECT](#intersect)
     - [Nested Queries](#nested-queries)
-<!-- ch5-part1.mp4 -->
+        - [IN & NOT IN](#in)
+        - [ANY & ALL](#any--all)
 
+<!-- ch5-part1.mp4 -->
 ## `DDL (Data Definition Language)`
 <p id="create"></p>
 
@@ -157,3 +159,43 @@ WHERE S.sid = R.sid AND R.bid = B.bid AND B.color = 'green';
 <p id="nested-queries"></p>
 
 - `Nested Queries`
+    
+```sql
+SELECT S.sid
+FROM Sailors S
+WHERE S.rating = (SELECT MAX(S1.rating)
+                  FROM Sailors S1);
+```
+
+<p id="in"></p>
+
+- `IN & NOT IN`
+
+_example_:
+```sql
+SELECT S.sid -- IN keyword
+FROM Sailors S
+WHERE S.name IN ('Alice', 'Bob', 'Charlie');
+```
+
+
+<p id="any--all"></p>
+
+- `ANY & ALL`  
+`ALL`: returns true if the comparison is true for _all_ rows in the subquery.  
+`ANY`: returns true if the comparison is true for any row(_at least one row_) in the subquery.
+
+
+```sql
+SELECT S.name -- ALL keyword
+FROM Sailors S
+WHERE S.rating > ALL (SELECT S1.rating
+                      FROM Sailors S1
+                      WHERE S1.age > 30);
+
+SELECT S.name -- ANY keyword
+FROM Sailors S
+WHERE S.rating > ANY (SELECT S1.rating
+                      FROM Sailors S1
+                      WHERE S1.age > 30);
+```
