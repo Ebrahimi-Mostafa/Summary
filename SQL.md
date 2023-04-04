@@ -160,7 +160,8 @@ WHERE S.sid = R.sid AND R.bid = B.bid AND B.color = 'green';
 
 <p id="nested-queries"></p>
 
-- `Nested Queries`
+- `Nested Queries`  
+in general, a subquery must be recompiled for every row of the outer query.
     
 ```sql
 SELECT S.sid
@@ -186,8 +187,8 @@ WHERE S.name IN ('Alice', 'Bob', 'Charlie');
 <p id="exists--not-exists"></p>
 
 - `EXISTS & NOT EXISTS`  
-`EXISTS`: returns true if the subquery returns at _least one row_.  
-`NOT EXISTS`: returns true if the subquery returns _no rows_.  
+`EXISTS`: returns true if the subquery is _not empty_.
+`NOT EXISTS`: returns true if the subquery is _empty_.  
 
 _example_:
 ```sql
