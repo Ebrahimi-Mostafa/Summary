@@ -10,6 +10,8 @@
     - [INTERSECT](#intersect)
     - [Nested Queries](#nested-queries)
         - [IN & NOT IN](#in)
+        - [EXISTS & NOT EXISTS](#exists--not-exists)
+        - [With correlation](#with-correlation)
         - [ANY & ALL](#any--all)
 
 <!-- ch5-part1.mp4 -->
@@ -169,7 +171,9 @@ WHERE S.rating = (SELECT MAX(S1.rating)
 
 <p id="in"></p>
 
-- `IN & NOT IN`
+- `IN & NOT IN`  
+`IN`: returns true if the value _exists_ in the subquery.  
+`NOT IN`: returns true if the value _does not exist_ in the subquery.
 
 _example_:
 ```sql
@@ -178,6 +182,27 @@ FROM Sailors S
 WHERE S.name IN ('Alice', 'Bob', 'Charlie');
 ```
 
+
+<p id="exists--not-exists"></p>
+
+- `EXISTS & NOT EXISTS`  
+`EXISTS`: returns true if the subquery returns at _least one row_.  
+`NOT EXISTS`: returns true if the subquery returns _no rows_.  
+
+_example_:
+```sql
+SELECT S.name -- EXISTS keyword
+FROM Sailors S
+WHERE EXISTS (SELECT *
+              FROM Reserves R
+              WHERE R.sid = S.sid AND R.day = '10-10-10');
+```
+
+
+<p id="with-correlation"></p>
+
+- `With correlation`  
+in above example, the subquery is correlated with the outer query, because the subquery uses a variable from the outer query.
 
 <p id="any--all"></p>
 
