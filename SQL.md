@@ -12,7 +12,7 @@
         - [IN & NOT IN](#in)
         - [EXISTS & NOT EXISTS](#exists--not-exists)
         - [With correlation](#with-correlation)
-        - [UNIQUE](#unique)
+        - [UNIQUE & NOT UNIQUE](#unique)
         - [ANY & ALL](#any--all)
 
 <!-- ch5-part1.mp4 -->
@@ -209,8 +209,9 @@ in above example, the subquery is correlated with the outer query, because the s
 
 <p id="unique"></p>
 
-- `UNIQUE`  
-It returns true if the subquery returns every row in the outer query _at most once_.
+- `UNIQUE & NOT UNIQUE`
+`UNIQUE`: returns true if the subquery returns _every row_ in the outer query _at most once_.
+`NOT UNIQUE`: returns true if the subquery returns _every row_ in the outer query _more than once_(there is at least one duplicate).
 
 ```sql
 SELECT S.sid
