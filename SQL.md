@@ -363,7 +363,7 @@ FROM Sailors S;
 <br>
 <p id="min--max"></p>
 
-- `MIN & MAX`
+- `MIN & MAX`  
 MIN(column) returns the minimum value in the column.
 MAX(column) returns the maximum value in the column.
 
