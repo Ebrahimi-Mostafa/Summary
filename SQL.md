@@ -12,6 +12,7 @@
         - [IN & NOT IN](#in)
         - [EXISTS & NOT EXISTS](#exists--not-exists)
         - [With correlation](#with-correlation)
+        - [UNIQUE](#unique)
         - [ANY & ALL](#any--all)
 
 <!-- ch5-part1.mp4 -->
@@ -204,6 +205,21 @@ WHERE EXISTS (SELECT *
 
 - `With correlation`  
 in above example, the subquery is correlated with the outer query, because the subquery uses a variable from the outer query.
+
+
+<p id="unique"></p>
+
+- `UNIQUE`  
+It returns true if the subquery returns every row in the outer query _at most once_.
+
+```sql
+SELECT S.sid
+FROM Sailors S
+WHERE UNIQUE (SELECT R.sid
+              FROM Reserves R
+              WHERE R.bid = 103 AND S.sid = R.sid);
+-- finds sailors with at most one reservation for boat #103.
+```
 
 <p id="any--all"></p>
 
