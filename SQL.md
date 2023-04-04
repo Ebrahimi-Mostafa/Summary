@@ -21,6 +21,8 @@
         - [SUM](#sum)
         - [AVG](#avg)
         - [MIN & MAX](#min--max)
+    - [GROUP BY](#group-by)
+
 
 <!-- ch5-part1.mp4 -->
 
@@ -383,3 +385,19 @@ FROM Sailors S;
 SELECT MAX(S.age)
 FROM Sailors S;
 ```
+
+<br>
+<p id="group-by"></p>
+
+- `GROUP BY`  
+GROUP BY is used to group the rows of a table into a set of summary rows.
+
+```sql
+SELECT S.rating, COUNT(*) AS num
+FROM Sailors S
+WHERE S.age > 30
+GROUP BY S.rating;
+```
+
+***NOTE***: Col of aggregate operators doesn't have name. We can use `AS` to give it a name.  
+***NOTE***: When we use `GROUP BY`, in `SELECT` clause, we can only use columns in `GROUP BY` clause or aggregate operators.  
