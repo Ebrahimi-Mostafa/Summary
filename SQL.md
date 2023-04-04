@@ -14,6 +14,7 @@
         - [With correlation](#with-correlation)
         - [UNIQUE & NOT UNIQUE](#unique)
         - [ANY & ALL](#any--all)
+    - [EXCEPT](#except)
 
 <!-- ch5-part1.mp4 -->
 ## `DDL (Data Definition Language)`
@@ -38,6 +39,7 @@ CREATE TABLE Sailors (
 );
 ```
 
+<br>
 <p id="alter"></p>
 
 - `ALTER`
@@ -51,6 +53,7 @@ ALTER TABLE Sailors
 ADD address string;
 ```
 
+<br>
 <p id="drop"></p>
 
 - `DROP`
@@ -72,6 +75,7 @@ We use these tables for executing queries on the database.
     Boats (bid: integer, bname: string, color: string)  
     Reserves (sid: integer, bid: integer, day: date)
 
+<br>
 <p id="select"></p>
 
 - `SELECT`
@@ -109,6 +113,7 @@ FROM Sailors S
 WHERE S.sname LIKE 'B_%B';
 ```
 
+<br>
 <p id="union"></p>
 
 - `UNION`
@@ -126,6 +131,7 @@ WHERE S.sid = R.sid AND R.bid = B.bid AND B.color = 'green';
 ***NOTE***: `UNION` deletes duplicate rows. We can use `UNION ALL` to keep duplicates.
 
 
+<br>
 <p id="except"></p>
 
 - `EXCEPT`
@@ -142,6 +148,7 @@ WHERE S.sid = R.sid AND R.bid = B.bid AND B.color = 'green';
 
 ***NOTE***: `EXCEPT` deletes duplicate rows. We can use `EXCEPT ALL` to keep duplicates.
 
+<br>
 <p id="intersect"></p>
 
 - `INTERSECT`
@@ -159,6 +166,7 @@ WHERE S.sid = R.sid AND R.bid = B.bid AND B.color = 'green';
 ***NOTE***: `INTERSECT` deletes duplicate rows. We can use `INTERSECT ALL` to keep duplicates.
 
 
+<br>
 <p id="nested-queries"></p>
 
 - `Nested Queries`  
@@ -171,6 +179,7 @@ WHERE S.rating = (SELECT MAX(S1.rating)
                   FROM Sailors S1);
 ```
 
+<br>
 <p id="in"></p>
 
 - `IN & NOT IN`  
@@ -185,6 +194,7 @@ WHERE S.name IN ('Alice', 'Bob', 'Charlie');
 ```
 
 
+<br>
 <p id="exists--not-exists"></p>
 
 - `EXISTS & NOT EXISTS`  
@@ -201,12 +211,14 @@ WHERE EXISTS (SELECT *
 ```
 
 
+<br>
 <p id="with-correlation"></p>
 
 - `With correlation`  
 in above example, the subquery is correlated with the outer query, because the subquery uses a variable from the outer query.
 
 
+<br>
 <p id="unique"></p>
 
 - `UNIQUE & NOT UNIQUE`  
@@ -222,6 +234,7 @@ WHERE UNIQUE (SELECT R.sid
 -- finds sailors with at most one reservation for boat #103.
 ```
 
+<br>
 <p id="any--all"></p>
 
 - `ANY & ALL`  
@@ -242,3 +255,9 @@ WHERE S.rating > ANY (SELECT S1.rating
                       FROM Sailors S1
                       WHERE S1.age > 30);
 ```
+
+
+<br>
+<p id="EXCEPT"></p>
+
+- `EXCEPT`
