@@ -91,6 +91,7 @@ We use these tables for executing queries on the database.
 <br>
 <p id="query"></p>
 
+- `QUERY`  
 In SQL, there is a specific order in which the keywords in a query must appear. This order is as follows:  
 `SELECT`: specify which columns to retrieve from the table(s).  
 `FROM`: specify the table(s) from which to retrieve the data.  
