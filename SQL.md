@@ -4,6 +4,7 @@
     - [ALTER](#alter)
     - [DROP](#drop)
 - [DML (Data Manipulation Language)](#dml-data-manipulation-language)
+    - [QUERY](#query)
     - [SELECT](#select)
     - [UNION](#union)
     - [EXCEPT](#except)
@@ -85,6 +86,21 @@ We use these tables for executing queries on the database.
     Sailors (sid: integer, sname: string, rating: integer, age: real)      
     Boats (bid: integer, bname: string, color: string)  
     Reserves (sid: integer, bid: integer, day: date)
+
+
+<br>
+<p id="query"></p>
+
+In SQL, there is a specific order in which the keywords in a query must appear. This order is as follows:  
+`SELECT`: specify which columns to retrieve from the table(s).  
+`FROM`: specify the table(s) from which to retrieve the data.  
+`JOIN`: join other tables to the main table(s).  
+`WHERE`: filter the rows to include in the results.  
+`GROUP` BY: group the results by one or more columns.  
+`HAVING`: filter the groups to include in the results.  
+`ORDER BY`: sort the results.  
+`LIMIT`: limit the number of rows returned.
+
 
 <br>
 <p id="select"></p>
