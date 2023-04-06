@@ -24,6 +24,10 @@
         - [MIN & MAX](#min--max)
     - [GROUP BY](#group-by)
         - [HAVING](#having)
+    - [Null Values](#null-values)
+        - [3-valued logic](#3-valued-logic)
+        - [Handling Null Values in SQL Operations](#handling-null-values-in-sql-operations)
+        - [Left Outer Join](#left-outer-join)
 
 
 <!-- ch5-part1.mp4 -->
@@ -471,3 +475,44 @@ of an aggregate operation or must also appear in the grouping-list.
 ***NOTE***: HAVING clause can also contain a subquery.
 
 <!-- ch5-part3 -->
+
+
+<br>
+<p id="null-values"></p>
+
+- `Null Values`   
+Fields in a table can be empty. These empty fields are called `NULL` values.
+
+
+<br>
+<p id="3-valued-logic"></p>
+
+- `3-Valued Logic`
+
+`AND` | T | F | NULL
+--- | --- | --- | ---
+T | T | F | NULL
+F | F | F | F
+NULL | NULL | F | NULL
+
+`OR` | T | F | NULL
+--- | --- | --- | ---
+T | T | T | T
+F | T | F | NULL
+NULL | T | NULL | NULL
+
+
+<br>
+<p id="handling-null-values-in-sql-operations"></p>
+
+- `Handling Null Values in SQL Operations`  
+    - Comparisons *<, >, =* return null if one of their arguments in null.  
+    - Arithmetic operations *+, -, *, /* return null if one of their arguments is null.  
+    - *COUNT(*)* handles null values like other values (they get counted).
+    - *COUNT(column)* ignores null values.
+    - *COUNT, SUM, AVG, MIN, MAX* and variations using *DISTINCT* discard null values.
+        - Special case: if one of *these operators, other than COUNT*, is applied to only null values, the result is null
+
+
+<br>
+<p id="left-outer-join"></p>
