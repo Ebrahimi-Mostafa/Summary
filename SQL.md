@@ -618,3 +618,31 @@ CHECK
 
 <br>
 <p id="trigger"></p>
+
+- `Trigger`
+Trigger is a special kind of stored procedure that is automatically executed in response to certain events.  
+
+The parts of a trigger are:  
+- Event (activates the trigger)  
+- Condition (tests whether the triggers should run)(optional)  
+- Action (what happens if the trigger runs)
+
+***NOTE***: Condition can be a expression or a query(returns true when expression is true or query returns a non-empty result set).
+
+Time of execution: before/after/instead of the triggering event.  
+
+The action can be performed either: for each row or for the entire triggering event.
+
+Syntax:
+```sql
+CREATE TRIGGER trigger_name
+{BEFORE | AFTER} {INSERT | UPDATE | DELETE}
+ON table_name
+REFERENCING NEW {TABLE | ROW} AS new_alias OLD {TABLE | ROW} AS old_alias
+FOR EACH {ROW | STATEMENT}
+WHEN (condition)
+BEGIN
+  -- trigger code goes here
+END;
+```
+
