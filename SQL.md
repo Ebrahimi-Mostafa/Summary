@@ -28,6 +28,8 @@
         - [3-valued logic](#3-valued-logic)
         - [Handling Null Values in SQL Operations](#handling-null-values-in-sql-operations)
         - [Left Outer Join](#left-outer-join)
+        - [Right Outer Join](#right-outer-join)
+        - [Full Outer Join](#full-outer-join)
 
 
 <!-- ch5-part1.mp4 -->
@@ -516,3 +518,38 @@ NULL | T | NULL | NULL
 
 <br>
 <p id="left-outer-join"></p>
+
+- `Left Outer Join`  
+Left outer join returns all rows from the left table, and matching rows from the right table. The result is NULL from the right side, if there is no match.
+
+```sql
+SELECT S.sid, S.name, R.bid
+FROM Sailors S LEFT OUTER JOIN Reserves R
+ON S.sid = R.sid;
+```
+
+<br>
+<p id="right-outer-join"></p>
+
+- `Right Outer Join`  
+Right outer join returns all rows from the right table, and matching rows from the left table. The result is NULL from the left side, if there is no match.
+
+```sql
+SELECT S.sid, S.name, R.bid
+FROM Sailors S RIGHT OUTER JOIN Reserves R
+ON S.sid = R.sid;
+```
+
+<br>
+<p id="full-outer-join"></p>
+
+- `Full Outer Join`  
+Full outer join returns all rows from both tables. The result is NULL in both sides when there is no match.
+
+```sql
+SELECT S.sid, S.name, R.bid
+FROM Sailors S FULL OUTER JOIN Reserves R
+ON S.sid = R.sid;
+```
+
+<br>
