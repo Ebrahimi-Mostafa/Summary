@@ -21,7 +21,7 @@
         - [COUNT](#count)
         - [SUM](#sum)
         - [AVG](#avg)
-        - [MIN & MAX](#min--max)
+        - [MIN & MAX](#min--max) 
     - [GROUP BY](#group-by)
         - [HAVING](#having)
     - [Null Values](#null-values)
@@ -30,6 +30,10 @@
         - [Left Outer Join](#left-outer-join)
         - [Right Outer Join](#right-outer-join)
         - [Full Outer Join](#full-outer-join)
+    - [Integrity Constraints](#integrity-constraints)
+        - [General Constraints](#general-constraints)
+        - [IC over multiple tables](#ic-over-multiple-tables)
+    - [Trigger](#trigger)
 
 
 <!-- ch5-part1.mp4 -->
@@ -553,3 +557,64 @@ ON S.sid = R.sid;
 ```
 
 <br>
+<p id="integrity-constraints"></p>
+
+- `Integrity Constraints`
+Types of integrity constraints:
+    - Domain constraint(field type)
+    - Primary key constraint
+    - Foreign key constraint
+    - General constraint
+    - IC over multiple tables
+
+
+<br>
+<p id="general-constraints"></p>
+
+- `General constraint`  
+General constraints are used to specify additional conditions that must be satisfied by the data in a table.
+
+***NOTE***: Constraint can be named.
+
+```sql
+CREATE TABLE Sailors (
+    sid INTEGER NOT NULL,
+    name VARCHAR(20) NOT NULL,
+    age INTEGER NOT NULL,
+    rating INTEGER NOT NULL,
+    PRIMARY KEY (sid),
+    CONSTRAINT age_rating CHECK (age >= 18 AND age <= 45),
+    CHECK (rating >= 1 AND rating <= 10)
+);
+```
+
+***NOTE***: Can use _queries_ to express constraint.  
+
+```sql
+CREATE TABLE Reserves (
+    sid INTEGER NOT NULL,
+    bid INTEGER NOT NULL,
+    day DATE NOT NULL,
+    PRIMARY KEY (sid, bid, day),
+    FOREIGN KEY (sid) REFERENCES Sailors,
+    FOREIGN KEY (bid) REFERENCES Boats,
+    CHECK (day NOT IN (SELECT day FROM Reserves WHERE sid = 22))
+)
+```
+
+
+<br>
+<p id="ic-over-multiple-tables"></p>
+
+- `IC over multiple tables`
+
+```sql
+CREATE ASSERTION small_club
+CHECK
+( (SELECT COUNT (S.sid) FROM Sailors S)
++ (SELECT COUNT(B.bid) FROM Boats B) < 100)
+```
+
+
+<br>
+<p id="trigger"></p>
