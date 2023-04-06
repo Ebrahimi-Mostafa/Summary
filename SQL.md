@@ -646,3 +646,27 @@ BEGIN
 END;
 ```
 
+Example:
+```sql
+CREATE TRIGGER check_rating
+BEFORE INSERT ON Sailors
+REFERENCING NEW ROW AS new_sailor
+FOR EACH ROW
+WHEN (new_sailor.rating < 1 OR new_sailor.rating > 10)
+BEGIN
+  SIGNAL SQLSTATE '45000'
+  SET MESSAGE_TEXT = 'Rating must be between 1 and 10';
+END;
+
+-- another example
+CREATE TRIGGER set_count
+AFTER INSERT ON Students/* Event */ 
+REFERENCING NEW TABLE AS InsertedTuples 
+FOR EACH STATEMENT
+INSERT /* Action */
+INTO StatisticsTable (ModifiedTable,
+ModificationType, Count) 
+SELECT ‘Students’, ‘Insert’, COUNT *
+FROM InsertedTuples I W
+WHERE I.age <= 18
+```
