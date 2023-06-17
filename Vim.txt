@@ -129,3 +129,7 @@ VISUAL mode:
 Part 3
 Source: https://www.youtube.com/watch?v=wwtoRHn9bIA&t=3s
 //////////////////
+
+
+m + a -> mark a position with a
+' + a -> go to the position marked with a
