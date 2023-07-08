@@ -9,7 +9,7 @@ Source: https://www.youtube.com/watch?v=xk4_1vDrzzo&t=3305s
     - [Comments](#comments)
 
 <a id="run-a-simple-java-program"></a>
-## `0.` Run a simple Java program
+## 0. Run a simple Java program
 Assume that is structure of our project:
 ```
 .
@@ -34,7 +34,7 @@ java -cp bin Main
 
 
 <a id="java-tutorial-for-beginners"></a>
-## `1.` Java tutorial for beginners
+## 1. Java tutorial for beginners
 
 <a id="print-to-the-console"></a>
 ### Print to the console
