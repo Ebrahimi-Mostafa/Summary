@@ -7,6 +7,10 @@ Source: https://www.youtube.com/watch?v=xk4_1vDrzzo&t=3305s
     - [Print to the console](#print-to-the-console) 
     - [Escape sequences](#escape-sequences) 
     - [Comments](#comments)
+2. [Variables](#variables)
+    - [Data types](#data-types)
+3. [Swap two variables](#swap-two-variables)
+    
 
 <a id="run-a-simple-java-program"></a>
 ## 0. Run a simple Java program
@@ -97,3 +101,75 @@ or
 ```
 
 > **Note:** Documentation comment is used to generate documentation for our code.
+
+
+<a id="variables"></a>
+## 2. Variables
+<a id="data-types"></a>
+- Data types:
+    - Primitive data types:
+        - `boolean`: 1 byte
+        - `byte`: 1 byte
+        - `short`: 2 bytes
+        - `int`: 4 bytes
+        - `long`: 8 bytes
+        - `float`: 4 bytes
+        - `double`: 8 bytes
+        - `char`: 2 bytes
+    - Reference data types:
+        - `String`
+        - `Array`
+        - `Interface`
+        - `Class`
+        - `Enum`
+        - `...`
+
+| Data type | Size | Description |
+| --------- | ---- | ----------- |
+| `boolean` | 1 bit | Stores `true` or `false` values |
+| `byte` | 1 byte | Stores whole numbers from `-128` to `127` |
+| `short` | 2 bytes | Stores whole numbers from `-32,768` to `32,767` |
+| `int` | 4 bytes | Stores whole numbers from `-2,147,483,648` to `2,147,483,647` |
+| `long` | 8 bytes | Stores whole numbers from `-9,223,372,036,854,775,808` to `9,223,372,036,854,775,807` |
+| `float` | 4 bytes | Stores fractional numbers. Sufficient for storing `6` to `7` decimal digits |
+| `double` | 8 bytes | Stores fractional numbers. Sufficient for storing `15` decimal digits |
+| `char` | 2 bytes | Stores a single character/letter or ASCII values |
+| `String` | varies | Stores a sequence of characters |
+
+> **Note:** `String` is not a primitive data type. It is a reference data type. However, it is one of the most used data types in Java.
+
+| Primitive | Reference |
+| --------- | --------- |
+| 8 types | unlimited (user-defined) |
+| Stores data | Stores address of the data stored somewhere else in memory |
+| can only hold 1 value | could hold more than 1 value |
+| less memory | more memory |
+| faster | slower |
+
+> **Note:**   
+> `Primitives` &rarr; starts with `lowercase` letter.  
+> `Reference` &rarr; starts with `uppercase` letter.
+
+> **Note:** String + Number = String
+```java
+String x = "Your number is: "
+int y = 10;
+String z = x + y; // z = "Your number is: 10"
+```
+
+> **Note:** We can't give multi-argument to `System.out.println()` method.  
+> We need to use `+` operator to concatenate the arguments.
+```java
+System.out.println("Hello", "World"); // Error
+System.out.println("Hello" + "World"); // HelloWorld
+```
+
+In java, for assigmnet long and float, we need to add `L`(or `l`) and `F`(or `f`) respectively at the end of the number.
+```java
+long x = 10000000000L;
+float y = 5.75F;
+```
+
+
+<a id="swap-two-variables"></a>
+## 3. Swap two variables
