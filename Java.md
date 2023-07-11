@@ -1,20 +1,23 @@
-# Java
+# Java :computer:
 Source: https://www.youtube.com/watch?v=xk4_1vDrzzo&t=3305s
 
-## 📋 Table of Contents  
-0. [Run a simple Java program](#run-a-simple-java-program)
-1. [Java tutorial for beginners](#java-tutorial-for-beginners)
-    - [Print to the console](#print-to-the-console) 
-    - [Escape sequences](#escape-sequences) 
-    - [Comments](#comments)
-2. [Variables](#variables)
-    - [Data types](#data-types)
-3. [Swap two variables](#swap-two-variables)
-4. [:keyboard: User input](#user-input)
-5. [expressions](#expressions)
+## Table of Contents :clipboard:
+0. [Run a simple Java program :card_file_box:](#run-a-simple-java-program)
+1. [Java tutorial for beginners :book:](#java-tutorial-for-beginners)
+    - [Print to the console :printer:](#print-to-the-console) 
+    - [Escape sequences :arrow_right_hook:](#escape-sequences)
+    - [Comments :speech_balloon:](#comments)
+2. [Variables :1234:](#variables)
+    - [Data types :floppy_disk:](#data-types)
+3. [Swap two variables :arrows_counterclockwise:](#swap-two-variables)
+4. [User input :keyboard:](#user-input)
+5. [Expressions :abacus:](#expressions)
+
+
+
 
 <a id="run-a-simple-java-program"></a>
-## 0. Run a simple Java program
+## 0. Run a simple Java program :card_file_box:
 Assume that is structure of our project:
 ```
 .
@@ -39,10 +42,10 @@ java -cp bin Main
 
 
 <a id="java-tutorial-for-beginners"></a>
-## 1. Java tutorial for beginners
+## 1. Java tutorial for beginners :book:
 
 <a id="print-to-the-console"></a>
-### Print to the console
+### Print to the console :printer:
 This line just print out a string to the console `without a new line`:
 
 ```java
@@ -59,7 +62,7 @@ The two lines above are equivalent.
 > **Trick:** Instead of typing `System.out.println()`, we can type `sout` or `sysout` then press `Tab` key.
 
 <a id="escape-sequences"></a>
-### Escape sequences
+### Escape sequences :arrow_right_hook:
 | Escape sequence | Description |
 | --------------- | ----------- |
 | `\n` | New line |
@@ -75,7 +78,7 @@ The two lines above are equivalent.
 
 
 <a id="comments"></a>
-### Comments
+### Comments :speech_balloon:
 - `Single line` comment:
 ```java
 // This is a single line comment
@@ -105,9 +108,9 @@ or
 
 
 <a id="variables"></a>
-## 2. Variables
+## 2. Variables :1234:
 <a id="data-types"></a>
-- Data types:
+- Data types :floppy_disk:: 
     - Primitive data types:
         - `boolean`: 1 byte
         - `byte`: 1 byte
@@ -173,7 +176,7 @@ float y = 5.75F;
 
 
 <a id="swap-two-variables"></a>
-## 3. Swap two variables
+## 3. Swap two variables :arrows_counterclockwise:
 
 ```java
 String x = "Water";
@@ -190,7 +193,7 @@ System.out.println("x: " + x + "\n" + "y: " + y);
 
 
 <a id="user-input"></a>
-## 4. :keyboard:User input 
+## 4. User input :keyboard:
 First, we need to import `Scanner` class from `java.util` package:
 ```java
 import java.util.Scanner;
@@ -217,4 +220,4 @@ int age = scanner.nextInt();
 
 
 <a id="expressions"></a>
-## 5. Expressions
+## 5. Expressions :abacus:
