@@ -10,7 +10,8 @@ Source: https://www.youtube.com/watch?v=xk4_1vDrzzo&t=3305s
 2. [Variables](#variables)
     - [Data types](#data-types)
 3. [Swap two variables](#swap-two-variables)
-    
+4. [:keyboard: User input](#user-input)
+5. [expressions](#expressions)
 
 <a id="run-a-simple-java-program"></a>
 ## 0. Run a simple Java program
@@ -173,3 +174,47 @@ float y = 5.75F;
 
 <a id="swap-two-variables"></a>
 ## 3. Swap two variables
+
+```java
+String x = "Water";
+String y = "Milk";
+System.out.println("x: " + x + "\n" + "y: " + y);
+
+String temp;
+temp = x;
+x = y;
+y = temp;
+System.out.println("After SWAP");
+System.out.println("x: " + x + "\n" + "y: " + y);
+```
+
+
+<a id="user-input"></a>
+## 4. :keyboard:User input 
+First, we need to import `Scanner` class from `java.util` package:
+```java
+import java.util.Scanner;
+```
+
+Then, we need to create a `Scanner` object that takes input from `System.in`:
+```java
+Scanner scanner = new Scanner(System.in);
+```
+
+Finally, we can use `Scanner` object to take input from user:
+- `nextLine()` &rarr; takes input as a `String`
+```java
+String name = scanner.nextLine();
+```
+- `nextInt()` &rarr; takes input as an `int`
+```java
+int age = scanner.nextInt();
+```
+
+> **Note:** `nextLine()` method takes the whole line as input. but `nextInt()` method takes only the first token as input, and the rest of the line is ignored.  
+
+> **Note:** After use `nextInt()` method, we need to use `nextLine()` method to take the rest of the line as input and `clear the input buffer`.
+
+
+<a id="expressions"></a>
+## 5. Expressions
