@@ -164,7 +164,7 @@ System.out.println("Hello", "World"); // Error
 System.out.println("Hello" + "World"); // HelloWorld
 ```
 
-In java, for assigmnet long and float, we need to add `L`(or `l`) and `F`(or `f`) respectively at the end of the number.
+In java, for assignment long and float, we need to add `L`(or `l`) and `F`(or `f`) respectively at the end of the number.
 ```java
 long x = 10000000000L;
 float y = 5.75F;
