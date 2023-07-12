@@ -74,3 +74,27 @@ docker rmi <image_id>
 ```bash
 docker container prune
 ```
+
+* See Help of a command:
+```bash
+docker <command> --help
+```
+or
+```bash
+docker help <command>
+```
+
+* Run image & remove container after exit:
+```bash
+docker run --rm <image_name>
+```
+
+* Run image & get shell access:
+```bash
+docker run -it <image_name>
+```
+
+* Run image on a specific system port & container port:
+```bash
+docker run -p <system_port>:<container_port> <image_name>
+```
