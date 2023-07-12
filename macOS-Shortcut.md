@@ -42,3 +42,5 @@
 ## Other
 - option + shift + cmd + v &rarr; Paste and match style
 - shift + cmd + '?' &rarr; Open the help menu
+- Delete &rarr; Remove previous character
+- Delete + fn &rarr; Remove next character
