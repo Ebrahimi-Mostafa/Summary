@@ -98,3 +98,21 @@ docker run -it <image_name>
 ```bash
 docker run -p <system_port>:<container_port> <image_name>
 ```
+
+* Run a command inside a running container:
+```bash
+docker exec <container_id> <command>
+```
+
+* Run a command inside a running container & get shell access:
+```bash
+docker exec -it <container_id> <command>
+```
+example:
+```bash
+docker exec -it 3b3b3b3b3b3b vi /etc/nginx/nginx.conf
+```
+or
+```bash
+docker exec -it 3b3b3b3b3b3b sh
+```
