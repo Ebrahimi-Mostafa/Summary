@@ -94,7 +94,7 @@ docker run --rm <image_name>
 docker run -it <image_name>
 ```
 
-* Run image on a specific system port & container port:
+* Run image & connect a container port to a system port:
 ```bash
 docker run -p <system_port>:<container_port> <image_name>
 ```
