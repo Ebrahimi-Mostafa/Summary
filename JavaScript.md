@@ -6,6 +6,12 @@ Source: https://www.youtube.com/watch?v=8dWL3wF_OMw
 1. [JavaScript tutorial for beginners](#JavaScript-tutorial-for-beginners)
 2. [Variables](#Variables)
 3. [Arithmetic expressions](#Arithmetic-expressions)
+    1. [Augmented assignment operator](#Augmented-assignment-operator)
+    2. [Operator precedence](#Operator-precedence)
+4. [User input](#User-input)
+    1. [Window prompt](#Window-prompt)
+    2. [HTML textbox](#HTML-textbox)
+5. [Type conversion](#Type-conversion)
 
 
 <a id="Setup"></a>  
@@ -19,7 +25,7 @@ Source: https://www.youtube.com/watch?v=8dWL3wF_OMw
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Lesson</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -131,3 +137,64 @@ window.alert("HELLO WORLD");
 
     <a id="Arithmetic-expressions"></a>
     ## 3. Arithmetic expressions
+    Arithmetic expressions is a combined of
+    * Operand (values, variables, etc.)
+    * Operators (+, -, *, /, %, etc.)
+
+    ```javascript
+    let x = 5;
+    let y = 3;
+
+    console.log(x + y); // 8
+    ```
+    <a id="Augmented-assignment-operator"></a>
+    > **Augmented assignment operator**:   
+    > `x += y` &rarr; `x = x + y`   
+    > `x -= y` &rarr; `x = x - y`  
+    > `x *= y` &rarr; `x = x * y`  
+    > ...
+
+    > **NOTE**  
+    > x++ &rarr; x = x + 1  
+    > x-- &rarr; x = x - 1
+
+
+    <a id="Operator-precedence"></a>
+    > **Operator precedence**:  
+    > 1. Parentheses &rarr; `()`
+    > 2. Exponentiation &rarr; `**`
+    > 3. Multiplication and division &rarr; `* /`
+    > 4. Addition and subtraction &rarr; `+ -`
+    > 5. Left to right
+
+
+    <a id="User-input"></a>
+    ## 4. User input
+
+    <a id="Window-prompt"></a>
+    ### 1. Window prompt
+    ```javascript
+    let name = window.prompt("Enter your name: ");
+    console.log(name);
+    ```
+
+    <a id="HTML-textbox"></a>
+    ### 2. HTML textbox
+
+    ```html
+    <input type="text" id="myText"> <br>
+    <button type="button" id="myButton">submit</button>
+    ```
+
+    ```javascript
+    let username;
+
+    document.getElementById("myButton").onclick = function(){
+
+        username = document.getElementById("myText").value;
+        console.log(username);
+    }
+    ```
+
+    <a id="Type-conversion"></a>
+    ## 5. Type conversion
