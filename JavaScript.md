@@ -12,6 +12,7 @@ Source: https://www.youtube.com/watch?v=8dWL3wF_OMw
     1. [Window prompt](#Window-prompt)
     2. [HTML textbox](#HTML-textbox)
 5. [Type conversion](#Type-conversion)
+6. [Const](#Const)
 
 
 <a id="Setup"></a>  
@@ -111,7 +112,7 @@ window.alert("HELLO WORLD");
 
     ```javascript
     let name = "John";
-    console.log("Hello", name);
+    console.log("Hello", name); // or console.log("Hello " + name);
 
     // output: Hello John
     ```
@@ -178,6 +179,8 @@ window.alert("HELLO WORLD");
     console.log(name);
     ```
 
+    > **Note:** The return value of `window.prompt()` is a `string`.
+
     <a id="HTML-textbox"></a>
     ### 2. HTML textbox
 
@@ -198,3 +201,44 @@ window.alert("HELLO WORLD");
 
     <a id="Type-conversion"></a>
     ## 5. Type conversion
+    ```javascript
+    let age = window.prompt("How old are you?"); // assume the user enters 25
+
+    age += 1;
+
+    console.log("Happy Birthday!! You are " + age + " years old"); // Happy Birthday!! You are 251 years old
+    ```
+    > **Note:** The result is `251` because the return value of `window.prompt()` is a `string`.
+
+    Fix this by converting the `string` to a `number`:
+
+    ```javascript
+    let age = window.prompt("How old are you?");
+    console.log(typeof age);
+
+    age = Number(age);
+    age += 1;
+
+    console.log(typeof age);
+
+    console.log("Happy Birthday!! You are " + age + " years old");
+    ```
+
+    Another example:
+
+    ```javascript
+    let x;
+    let y;
+    let z;
+
+    x = Number("3.14");
+    y = String(3.14);
+    z = Boolean("Hello");
+
+    console.log(x, typeof x);
+    console.log(y, typeof y);
+    console.log(z, typeof z);
+    ```
+
+    <a id="Const"></a>
+    ## 6. Const    
