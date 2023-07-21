@@ -4,6 +4,8 @@ Source: https://www.youtube.com/watch?v=_jKNnHROiC0&t=910s
 
 ## Table of Contents
 * [Part 1](#part-1)
+* [Part 2](#part-2)
+* [Part 3](#part-3)
 
 
 <a id="part-1"></a>
@@ -116,3 +118,28 @@ or
 ```bash
 docker exec -it 3b3b3b3b3b3b sh
 ```
+
+
+<a id="part-2"></a>
+## Part 2
+
+- Run image and give it a favorite name:
+```bash
+docker run --name <favorite_name> <image_name>
+```
+then we can use the favorite name instead of the container id for "exec" command:
+```bash
+docker exec <favorite_name> <command>
+```
+
+- Run image and map a directory on the host to a directory inside the container:
+```bash
+docker run -v <host_dir>:<container_dir> <image_name>
+```
+> **Note:** '-v' stands for 'volume'.  
+
+> **Note:** This is useful when we want to make changes to the files inside the container and we want to `keep those changes after the container is removed`. We can use this data again when we run another container from the same image.
+
+
+<a id="part-3"></a>
+## Part 3
