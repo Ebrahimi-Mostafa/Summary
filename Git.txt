@@ -1,0 +1,59 @@
+#git
+#source: https://faradars.org/fvgit9609
+#source: https://youtu.be/TEx_mRpIDkA
+
+
+git init
+git add filename
+git add -a   (OR)  git add -all
+git commit -m 'message'
+git status
+git log
+git diff
+git diff HEAD
+git diff --staged
+git diff filename
+git restore --staged filename  (OR)  git reset filename
+git restore filename      (OR)     git checkout -- filename
+git branch
+git branch nameOfNewBrach
+git checkout brachname
+git checkout "title_tag"
+git merge brachname
+git branch -d brachname
+git show "id_commit"
+git show "title_tag"
+
+
+git clone "address"
+git remote
+git remote add "name_remote" "address_remote"
+git push "name_remote" "name_branch"
+git clone "address"
+git push origin master
+git pull origin master
+git push
+git pull
+
+
+git tag
+git tag -a "title_tag" -m "message"
+git tag -a "title_tag" "id_commit" -m "message"
+git tag -l "expression(title_tag)"
+git push origin --tags
+git push origin "title_tag"
+git fetch --all --tags
+
+git log --oneline --graph
+git log --graph
+
+git help "commands"
+
+git blame "name_file"
+git blame "name_file" -L"number_line"
+git blame "name_file" -L"number_line","number_line"
+
+git bisect start
+git bisect bad
+git bisect good "id_commit"
+git bisect good
