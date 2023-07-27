@@ -23,6 +23,12 @@ docker run <image_name>
 ```
 > **Note:** If the image is not available locally, it will be downloaded from docker hub.  
 
+* Run image with a specific version:
+
+```bash
+docker run <image_name>:<tag>
+```
+
 We can give commands to the image by adding them at the end of the `docker run` command:
 
 ```bash
@@ -104,6 +110,8 @@ docker run -p <system_port>:<container_port> <image_name>
 * Run a command inside a running container:
 ```bash
 docker exec <container_id> <command>
+# or
+docker exec <container_name> <command>
 ```
 
 * Run a command inside a running container & get shell access:
@@ -143,3 +151,41 @@ docker run -v <host_dir>:<container_dir> <image_name>
 
 <a id="part-3"></a>
 ## Part 3
+`Dockerfile`: set of instructions to build a docker image.
+
+```dockerfile
+# Specify a base image
+FROM alpine
+
+# Copy requirements.txt to the container
+COPY ./requirements.txt /tmp/requirements.txt
+
+# Install dependencies
+# Run --> Run a command in the container
+RUN pip install -r /tmp/requirements.txt
+
+# Copy your app to the container
+COPY ./my_app /my_app
+```
+
+* Build an image from a Dockerfile:
+```bash
+docker build PathDockerfile
+```
+
+* Build an image from a Dockerfile and give it a name & tag:
+```bash
+docker build -t <image_name>:<tag> PathDockerfile
+```
+
+* Create a network for containers to communicate with each other:
+```bash
+docker network create <network_name>
+```
+
+* Run a container and connect it to a network:
+```bash
+docker run --network <network_name> <image_name>
+```
+
+> **Note:** When we create a network, docker will create a DNS server for that network. So, we can use the `container name` as the `host name` to communicate with that container.
