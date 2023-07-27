@@ -11,6 +11,9 @@ tmux ls -> list sessions
 tmux new -s X -> create new session named X
 
 cntrl + b :
+
+    set -g mouse on -> enable scroll with mouse
+
     % -> split current pane into two, left and right
     " -> split current pane into two, top and bottom
     
