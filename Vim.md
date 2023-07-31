@@ -10,6 +10,11 @@
         - [COMMAND mode](#command-mode-1)
         - [VISUAL mode](#visual-mode)
     - [Part 3](#part-3)
+- [Vimtutor](#vimtutor)
+  - [Lesson 1](#lesson-1)
+  - [Lesson 2](#lesson-2)
+
+
 
 ### Jadi tutorial Vim
 #### Part 1
@@ -121,3 +126,24 @@ Source: [YouTube](https://www.youtube.com/watch?v=wwtoRHn9bIA&t=3s)
 
 - `m + a` -> mark a position with a
 - `' + a` -> go to the position marked with a
+
+
+### Vimtutor
+#### Lesson 1
+             ^
+             k              Hint:  The h key is at the left and moves left.
+       < h       l >               The l key is at the right and moves right.
+             j                     The j key looks like a down arrow.
+             v                     The k key looks like an up arrow.
+
+
+- 'esc' -> go to normal mode
+- 'normal mode' + ':q!' -> quit without saving
+- 'normal mode' + ':w' -> write (save) the file, but don't exit
+- 'normal mode' + ':wq' -> write (save) and quit
+- 'normal mode' + 'i' -> insert before the cursor
+- 'normal mode' + 'A' -> insert (append) after the end of the line
+- 'normal mode' + 'x' -> delete the character under the cursor
+
+
+#### Lesson 2
