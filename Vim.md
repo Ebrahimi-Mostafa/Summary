@@ -11,8 +11,12 @@
         - [VISUAL mode](#visual-mode)
     - [Part 3](#part-3)
 - [Vimtutor](#vimtutor)
-  - [Lesson 1](#lesson-1)
-  - [Lesson 2](#lesson-2)
+    - [Lesson 1](#lesson-1)
+    - [Lesson 2](#lesson-2)
+        - [ON OPERATORS AND MOTIONS](#on-operators-and-motions)
+        - [USING A COUNT FOR A MOTION](#using-a-count-for-a-motion)
+    - [Lesson 3](#lesson-3)
+    
 
 
 
@@ -147,3 +151,54 @@ Source: [YouTube](https://www.youtube.com/watch?v=wwtoRHn9bIA&t=3s)
 
 
 #### Lesson 2
+
+- 'normal mode' + 'dw' -> delete unitl beginning of next word
+- 'normal mode' + 'd$' -> delete to the end of the line
+
+##### `ON OPERATORS AND MOTIONS`
+
+Many commands that change text are made from an operator and a motion.  
+The format for a delete command with the  d  delete operator is as follows:  
+
+    d   motion  
+
+Where:  
+d      - is the delete operator.  
+motion - is what the operator will operate on (listed below).  
+
+A short list of motions:  
+`w` - until the start of the next word, EXCLUDING its first character.  
+`e` - to the end of the current word, INCLUDING the last character.  
+`$` - to the end of the line, INCLUDING the last character.  
+
+Thus typing  de  will delete from the cursor to the end of the word.  
+
+> **NOTE:**  Pressing just the motion while in Normal mode without an operator will move the cursor as specified.  
+
+
+##### `USING A COUNT FOR A MOTION`
+
+
+    ** Typing a number before a motion repeats it that many times. **  
+
+- 2w -> move the cursor two words forward  
+- 3e -> move the cursor to the end of the third word forward
+- 0 -> move the cursor to the beginning of the line
+
+    ** Typing a number with an operator repeats it that many times.**  
+
+In the combination of the delete operator and a motion mentioned above you insert a count before the motion to delete more:  
+        d   number   motion
+
+- 2dw -> delete two words
+- d2w -> delete two words
+- 3de -> delete to the end of the third word forward
+
+---
+
+- 'normal mode' + 'dd' -> delete (cut) the whole line
+- 'normal mode' + 'u' -> undo the last command
+- 'normal mode' + 'U' -> undo all recent changes to the current line
+- 'normal mode' + 'ctrl + r' -> redo the last undo
+
+#### Lesson 3
