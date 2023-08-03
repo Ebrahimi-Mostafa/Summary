@@ -16,6 +16,8 @@
         - [ON OPERATORS AND MOTIONS](#on-operators-and-motions)
         - [USING A COUNT FOR A MOTION](#using-a-count-for-a-motion)
     - [Lesson 3](#lesson-3)
+        - [Paste](#paste)
+    - [Lesson 4](#lesson-4)
     
 
 
@@ -202,3 +204,24 @@ In the combination of the delete operator and a motion mentioned above you inser
 - 'normal mode' + 'ctrl + r' -> redo the last undo
 
 #### Lesson 3
+##### Paste
+- 'normal mode' + 'dd' -> delete (cut) the whole line
+- 'normal mode' + 'p' -> put (paste) the line after the cursor
+- 'normal mode' + 'P' -> put (paste) the line before the cursor
+
+- 'normal mode' + 'dw' -> delete (cut) the word
+- 'normal mode' + 'p' -> put (paste) the word after the cursor
+- 'normal mode' + 'P' -> put (paste) the word before the cursor
+
+- 'normal mode' + 'rx' -> replace the character under the cursor with x
+
+- 'normal mode' + 'ce' -> delete (cut) to the end of the word and places you in Insert mode
+- 'normal mode' + 'cc' -> delete (cut) the whole line and places you in Insert mode
+
+> **Note** 'ce' stands for 'change to the end of the word' and 'cc' stands for 'change (replace) current line'
+
+- 'normal mode' + 'c2w' -> change (replace) two words
+- 'normal mode' + 'c$' -> change (replace) to the end of the line
+
+
+#### Lesson 4
