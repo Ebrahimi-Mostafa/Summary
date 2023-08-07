@@ -1,5 +1,5 @@
 # Excel
-Source: https://www.youtube.com/watch?v=Vl0H-qTclOg
+Source: [YouTube](https://www.youtube.com/watch?v=Vl0H-qTclOg)
 
 ## 📋 Table of Contents
 1. [💰 Payroll](#💰-payroll)  
@@ -31,3 +31,13 @@ Source: https://www.youtube.com/watch?v=Vl0H-qTclOg
     3. Double click on the bottom right corner of the cell with the formula, it will copy the formula to the last row of the column.
 
 > **Note:** If the number is not showing up and instead `####` is showing up, then the column is not wide enough to show the whole number. Just drag the column to the right to make it wider.
+
+- IF Statement
+    - Syntax: `=IF(condition, value_if_true, value_if_false)`
+    - Example: `=IF(B2>40, "Yes", "No")`
+    - Example: `=IF(B2>40, B2*1.5, B2)`
+- You can use `+` even for Date  
+    - Example: A2 &rarr; `1/1/2020`,  
+    - B2 &rarr; `=A2+7` &rarr; `1/8/2020`
+- right click on `a` column + insert &rarr; insert `a` column  
+- right click on `3` columns + insert &rarr; insert `3` columns
