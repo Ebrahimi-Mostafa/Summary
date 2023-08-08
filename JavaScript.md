@@ -13,6 +13,8 @@ Source: https://www.youtube.com/watch?v=8dWL3wF_OMw
     2. [HTML textbox](#HTML-textbox)
 5. [Type conversion](#Type-conversion)
 6. [Const](#Const)
+7. [Math](#Math)
+8. [Hypotenuse calc practice program](#Hypotenuse-calc-practice-program)
 
 
 <a id="Setup"></a>  
@@ -242,3 +244,35 @@ window.alert("HELLO WORLD");
 
     <a id="Const"></a>
     ## 6. Const    
+    - `const` is a variable that cannot be reassigned.
+    ```javascript
+    const PI = 3.14;
+    ```
+
+    <a id="Math"></a>
+    ## 7. Math
+    `Math` is a built-in object that has properties and methods for mathematical constants and functions.
+
+    ```javascript   
+    let x = 4.6
+    let y = 1.1
+    let z = -8.3
+    let maximum
+    let minimum
+
+    x = Math.round(x) // Found the nearest integer
+    x = Math.floor(x) // Found the largest integer less than or equal to x
+    x = Math.ceil(x) // Found the smallest integer greater than or equal to x
+    x = Math.pow(x, 2)  // x^2
+    x = Math.sqrt(x) // square root of x
+    x = Math.abs(x) // absolute value of x
+    maximum = Math.max(x, y ,z) // maximum = 4.6
+    minimum = Math.min(x, y, z) // minimum = -8.3
+
+    x = Math.PI // 3.141592653589793
+    x = Math.E  // 2.718281828459045
+    ```
+
+
+<a id="Hypotenuse-calc-practice-program"></a>
+## 8. Hypotenuse calc practice program
