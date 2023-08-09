@@ -12,7 +12,8 @@ Source: https://www.youtube.com/watch?v=xk4_1vDrzzo&t=3305s
 3. [Swap two variables :arrows_counterclockwise:](#swap-two-variables)
 4. [User input :keyboard:](#user-input)
 5. [Expressions :abacus:](#expressions)
-
+6. [GUI intro](#gui-intro)
+7. [Math class](#math-class)
 
 
 
@@ -221,3 +222,37 @@ int age = scanner.nextInt();
 
 <a id="expressions"></a>
 ## 5. Expressions :abacus:
+
+- `Epression`: operands & operators
+- `Operands`: values, variables, numbers, quantity
+- `Operator`: + - * / %
+
+```java
+int x = 10;
+x = x + 1; // 11
+x += 1; // 12
+x++; // 13
+```
+
+
+<a id="gui-intro"></a>
+## 6. GUI intro :computer:
+
+- `GUI`: Graphical User Interface
+```java
+import javax.swing.JOptionPane;
+
+String name = JOptionPane.showInputDialog("Enter your name: "); // takes input as a String
+
+JOptionPane.showMessageDialog(null, "Hello " + name); // shows a message
+```
+
+> **Note:** `JOptionPane` returns a `String` value.  
+
+- Convert `String` to:
+    - `int`: `Integer.parseInt(String)`
+    - `double`: `Double.parseDouble(String)`
+
+
+<a id="math-class"></a>
+## 7. Math class
