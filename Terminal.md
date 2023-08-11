@@ -30,6 +30,13 @@ Source: [YouTube](https://youtu.be/tw07ctwa7_8)
 ## Common Shortcuts & Commands
 
 - `Ctrl + c`: Interrupt the currently running command.
+- `Ctrl + w`: Delete the word before the cursor.
+- `Ctrl + u`: Delete the whole line.
+- `Ctrl + k`: Delete the line after the cursor.
+
+- `Ctrl + r`: Search the command history.
+  - `Ctrl + r`: Move to the next matching command.
+
 
 ## Viewing & Editing Files
 
