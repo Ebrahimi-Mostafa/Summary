@@ -20,6 +20,6 @@ Welcome to my summary repository! This repository contains summaries of various 
 - [MATLAB.md](MATLAB.md) :chart_with_upwards_trend:
 - [Markdown.md](Markdown.md) :pencil:
 - [SQL.md](SQL.md) :floppy_disk:
-- [Terminal-Shortcut.md](Terminal-Shortcut.md) :computer:
+- [Terminal.md](Terminal.md) :computer:
 - [Tmux.md](Tmux.md) :pager:
 - [Vim.md](Vim.md) :memo:
