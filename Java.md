@@ -15,6 +15,7 @@ Source: https://www.youtube.com/watch?v=xk4_1vDrzzo&t=3305s
 6. [GUI intro](#gui-intro)
 7. [Math class](#math-class)
 8. [Random numbers](#random-numbers)
+9. [If statement](#if-statement)
 
 
 
@@ -273,3 +274,19 @@ Math.pow(x, 2); // 9.8596
 
 <a id="random-numbers"></a>
 ## 8. Random numbers
+```java
+import java.util.Random;
+
+Random random = new Random();
+
+int x = random.nextInt()
+int y = random.nextInt(10); // 0 <= y < 10
+
+double z = random.nextDouble(); // 0 <= z < 1
+
+boolean b = random.nextBoolean();
+```
+
+
+<a id="if-statement"></a>
+## 9. If statement
