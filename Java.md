@@ -14,6 +14,7 @@ Source: https://www.youtube.com/watch?v=xk4_1vDrzzo&t=3305s
 5. [Expressions :abacus:](#expressions)
 6. [GUI intro](#gui-intro)
 7. [Math class](#math-class)
+8. [Random numbers](#random-numbers)
 
 
 
@@ -256,3 +257,19 @@ JOptionPane.showMessageDialog(null, "Hello " + name); // shows a message
 
 <a id="math-class"></a>
 ## 7. Math class
+```java
+double x = 3.14;
+double y = -10;
+
+Math.max(x, y); // 3.14
+Math.min(x, y); // -10
+Math.abs(y); // 10
+Math.sqrt(x); // 1.772004514666935
+Math.round(x); // 3
+Math.ceil(x); // 4
+Math.floor(x); // 3
+Math.pow(x, 2); // 9.8596
+```
+
+<a id="random-numbers"></a>
+## 8. Random numbers
