@@ -45,10 +45,25 @@ Source: [YouTube](https://youtu.be/tw07ctwa7_8)
 - `cat "Path/file_name"`: Display the contents of a file.
 - `tac "Path/file_name"`: Display the contents of a file in reverse order.
 - `less "Path/file_name"`: View the contents of a file using a pager.
+- `file "Path/file_name"`: It use signatures and magic numbers to determine the file type.
+- `head "Path/file_name"`: Display the first 10 lines of a file.
+- `od "Path/file_name"`: Display the contents of a file in octal format. Some useful options:
+  - `-c`: Display the contents of a file in ASCII format(Characters) per byte.
+  - `-b`: Display the contents of a file in octal format per byte.
+  - `-A`: Display offsets in different formats.
+    - `-An`: Display no offsets.
+    - `-Ax`: Display offsets in hexadecimal format.
+    - `-Ad`: Display offsets in decimal format.
+  - `-w`: Customize the output width.
+    - `w4`: Display 4 byte per line.
+
 
 ### Searching within Files & Editing Files
 - `Vim "Path/file_name"`: Open a file in Vim (text editor). To enable syntax highlighting, type "syntax on" within Vim.
 - `grep word "Path/file_name"`: Search for a specific word in a file.
+- `open "Path/file_name"`: Open a file in its default application.
+  - `open -a "Application"`: open Application.
+
 
 ## Advanced Commands
 
