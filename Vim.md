@@ -18,7 +18,8 @@
     - [Lesson 3](#lesson-3)
         - [Paste](#paste)
     - [Lesson 4](#lesson-4)
-    
+- [Extra Tips](#extra-tips)
+    - [Normal mode](#normal-mode-2) 
 
 
 
@@ -225,3 +226,10 @@ In the combination of the delete operator and a motion mentioned above you inser
 
 
 #### Lesson 4
+
+
+### Extra Tips
+
+#### Normal mode
+- `gg` -> go to the first line
+- `G` -> go to the last line
