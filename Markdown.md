@@ -1,11 +1,8 @@
-<!-- source: https://commonmark.org/help/tutorial/ -->
 
-<!-- other: 
-https://commonmark.org/help/
-https://www.markdowntutorial.com
-https://itsfoss.com/markdown-guide/ -->
+# Markdown
+[Source](https://commonmark.org/help/tutorial/)
 
-# Contents
+## Contents :clipboard:
 - [Intro](#intro)
 - [Emphasis](#emphasis)
 - [Paragraphs](#paragraphs)
@@ -15,11 +12,11 @@ https://itsfoss.com/markdown-guide/ -->
 - [Links](#links)
 
 
-# Intro
+## Intro
 Markdown is a lightweight markup language used to format and style text documents.
 
 
-# Emphasis
+## Emphasis
 `*` and `_` for italic text.  
 `**` and `__` for bold text.
 
@@ -28,7 +25,7 @@ Markdown is a lightweight markup language used to format and style text document
 \*\*Mostafa\*\* --> **Mostafa**  
 \_\_Mostafa\_\_ --> __Mostafa__
 
-# Paragraphs
+## Paragraphs
 `one` or `more blank lines` for separate paragraphs.  
 `\` or `two spaces` for line break.
 
@@ -39,7 +36,7 @@ This is the second paragraph
 This is the first paragraph\
 This is the second paragraph
 
-# Headings
+## Headings
 Starting a line with a hash `#` and a `space` makes a header.  
 You can optionally add more `#` at the end to close the header. You don’t need to match the number of `#` used at the beginning.  
 `#` for heading 1  
@@ -52,7 +49,7 @@ You can optionally add more `#` at the end to close the header. You don’t need
 ### Heading 3
 ...
 
-# Blockquotes
+## Blockquotes
 To create a blockquote, start a line with greater than `>` followed by an optional space.  
 `>` for blockquotes.  
 `>>` for nested blockquotes.  
@@ -64,7 +61,7 @@ To create a blockquote, start a line with greater than `>` followed by an option
 >>
 >>> This is a nested blockquote
 
-# Lists
+## Lists
 `*` or `-` or `+` --> unordered list.  
 `.` or `)` --> ordered list.
 
@@ -80,4 +77,4 @@ To create a blockquote, start a line with greater than `>` followed by an option
     * Item 8b
 
 
-# Links
+## Links
