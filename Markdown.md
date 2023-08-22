@@ -78,3 +78,26 @@ To create a blockquote, start a line with greater than `>` followed by an option
 
 
 ## Links
+
+In Markdown, URLs might not automatically become links until they are enclosed within angle brackets `< >`. For example:
+
+- `google.com` becomes <http://google.com>
+
+Structured links provide more control:
+
+1. Using the format `[link text](url "title")`:
+   - The title is optional.
+   - Example: [Google](https://google.com "Google")
+
+2. Using reference-style links `[link text][id]`:
+   - Define the link with `[id]: url "title"`.
+   - The title is optional.
+   - Example: [Google][google]
+
+These approaches allow for organized and customizable linking.
+
+
+[google]: https://google.com "Google"  
+
+
+## Images
