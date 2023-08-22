@@ -10,6 +10,10 @@
 - [Blockquotes](#blockquotes)
 - [Lists](#lists)
 - [Links](#links)
+- [Images](#images)
+- [Code](#code)
+- [Nested Lists](#nested-lists)
+
 
 
 ## Intro
@@ -116,3 +120,23 @@ Images are almost identical to links, but they have an exclamation point `!` in 
 [github]: https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png "Github"
 
 ## Code
+1. Inline code:  
+   - Surround the code with a backtick character `.
+   - Example: `print("Hello World")`
+2. Code blocks:
+    - Indent each line of the block by at least 4 spaces or 1 tab.
+    - Example:  
+
+            print("Hello World")  
+            print("Hello World")  
+            print("Hello World")   
+
+    - Alternatively, you can use three backticks ``` to enclose the code block:
+    - Example:  
+    ``` python
+    print("Hello World")
+    print("Hello World")
+    print("Hello World")
+    ```
+
+## Nested Lists
