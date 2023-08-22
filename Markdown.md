@@ -101,3 +101,18 @@ These approaches allow for organized and customizable linking.
 
 
 ## Images
+Images are almost identical to links, but they have an exclamation point `!` in front of them:
+
+1. Using the format `![alt text](url "title")`:
+   - The title is optional.
+   - Example:  
+   ![Google](https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png "Google")
+2. Using reference-style links `![alt text][id]`:
+   - Define the link with `[id]: url "title"`.
+   - The title is optional.
+   - Example:  
+   ![Github][github]
+
+[github]: https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png "Github"
+
+## Code
