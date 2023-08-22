@@ -140,3 +140,12 @@ Images are almost identical to links, but they have an exclamation point `!` in 
     ```
 
 ## Nested Lists
+1. Nested lists are created by indenting the list items by four spaces or one tab:
+    - Item 1
+        - Item 1a
+        - Item 1b
+    - Item 2
+        - Item 2a
+        - Item 2b
+    - Item 3  
+        It's a paragraph inside a list item. 
