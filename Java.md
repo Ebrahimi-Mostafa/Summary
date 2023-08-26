@@ -16,6 +16,7 @@ Source: https://www.youtube.com/watch?v=xk4_1vDrzzo&t=3305s
 7. [Math class](#math-class)
 8. [Random numbers](#random-numbers)
 9. [If statement](#if-statement)
+10. [Switches](#switches)
 
 
 
@@ -225,7 +226,7 @@ int age = scanner.nextInt();
 <a id="expressions"></a>
 ## 5. Expressions :abacus:
 
-- `Epression`: operands & operators
+- `Expression`: operands & operators
 - `Operands`: values, variables, numbers, quantity
 - `Operator`: + - * / %
 
@@ -257,6 +258,7 @@ JOptionPane.showMessageDialog(null, "Hello " + name); // shows a message
 
 
 <a id="math-class"></a>
+
 ## 7. Math class
 ```java
 double x = 3.14;
@@ -273,6 +275,7 @@ Math.pow(x, 2); // 9.8596
 ```
 
 <a id="random-numbers"></a>
+
 ## 8. Random numbers
 ```java
 import java.util.Random;
@@ -289,4 +292,20 @@ boolean b = random.nextBoolean();
 
 
 <a id="if-statement"></a>
+
 ## 9. If statement
+```java
+int time = 14;
+
+if (time <= 10)
+    System.out.println("Good morning!");
+else if (time <= 18)
+    System.out.println("Good day!");
+else
+    System.out.println("Good evening!");
+```
+
+
+<a id="switches"></a>
+
+## 10. Switches
