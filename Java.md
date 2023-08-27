@@ -20,7 +20,7 @@ Source: https://www.youtube.com/watch?v=xk4_1vDrzzo&t=3305s
 10. [Switches](#switches)
 11. [Logical Operators](#logical-operators)
 12. [While loop](#while-loop)
-
+13. [For loop](#for-loop)
 
 <a id="run-a-simple-java-program"></a>
 ## 0. Run a simple Java program :card_file_box:
@@ -346,3 +346,26 @@ Used to connect two or more expressions.
 <a id="while-loop"></a>
 
 ## 12. While loop
+
+- while
+```java
+String name = "";
+while (name.isBlank()) {
+    name = scanner.nextLine();
+}
+System.out.println("Hello " + name);
+```
+
+- do while
+```java
+String name = "";
+do {
+    name = scanner.nextLine();
+} while (name.isBlank());
+System.out.println("Hello " + name);
+```
+
+
+<a id="for-loop"></a>
+
+## 13. For loop
