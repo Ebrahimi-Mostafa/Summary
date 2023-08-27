@@ -2,6 +2,7 @@
 Source: https://www.youtube.com/watch?v=xk4_1vDrzzo&t=3305s
 
 ## Table of Contents :clipboard:
+
 0. [Run a simple Java program :card_file_box:](#run-a-simple-java-program)
 1. [Java tutorial for beginners :book:](#java-tutorial-for-beginners)
     - [Print to the console :printer:](#print-to-the-console) 
@@ -18,7 +19,7 @@ Source: https://www.youtube.com/watch?v=xk4_1vDrzzo&t=3305s
 9. [If statement](#if-statement)
 10. [Switches](#switches)
 11. [Logical Operators](#logical-operators)
-
+12. [While loop](#while-loop)
 
 
 <a id="run-a-simple-java-program"></a>
@@ -332,3 +333,16 @@ switch(number){
 <a id="logical-operators"></a>
 
 ## 11. Logical Operators
+
+Used to connect two or more expressions.
+
+| Operator | Description |
+| -------- | ----------- |
+| `&&` | AND |
+| `\|\|` | OR |
+| `!` | NOT |
+
+
+<a id="while-loop"></a>
+
+## 12. While loop
