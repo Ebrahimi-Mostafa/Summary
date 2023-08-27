@@ -21,6 +21,7 @@ Source: https://www.youtube.com/watch?v=xk4_1vDrzzo&t=3305s
 11. [Logical Operators](#logical-operators)
 12. [While loop](#while-loop)
 13. [For loop](#for-loop)
+14. [Nested loops](#nested-loops)
 
 <a id="run-a-simple-java-program"></a>
 ## 0. Run a simple Java program :card_file_box:
@@ -369,3 +370,16 @@ System.out.println("Hello " + name);
 <a id="for-loop"></a>
 
 ## 13. For loop
+
+```java
+for (int i = 0; i < 5; i++) {
+    System.out.println(i);
+}
+```
+
+
+<a id="nested-loops"></a>
+
+## 14. Nested loops
+
+```java
