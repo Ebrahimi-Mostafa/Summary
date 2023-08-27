@@ -22,6 +22,7 @@ Source: https://www.youtube.com/watch?v=xk4_1vDrzzo&t=3305s
 12. [While loop](#while-loop)
 13. [For loop](#for-loop)
 14. [Nested loops](#nested-loops)
+15. [Arrays](#arrays)
 
 <a id="run-a-simple-java-program"></a>
 ## 0. Run a simple Java program :card_file_box:
@@ -383,3 +384,19 @@ for (int i = 0; i < 5; i++) {
 ## 14. Nested loops
 
 ```java
+Scanner scanner = new Scanner(System.in);
+int rows;
+rows = scanner.nextInt();
+scanner.close();
+
+for (int i = 0; i < rows; i++) {
+    for (int j = 0; j < (rows - i); j++)
+        System.out.print('*');
+    System.out.println();
+}
+```
+
+
+<a id="arrays"></a>
+
+## 15. Arrays
