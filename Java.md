@@ -23,6 +23,7 @@ Source: https://www.youtube.com/watch?v=xk4_1vDrzzo&t=3305s
 13. [For loop](#for-loop)
 14. [Nested loops](#nested-loops)
 15. [Arrays](#arrays)
+16. [2D Arrays](#2d-arrays)
 
 <a id="run-a-simple-java-program"></a>
 ## 0. Run a simple Java program :card_file_box:
@@ -400,3 +401,31 @@ for (int i = 0; i < rows; i++) {
 <a id="arrays"></a>
 
 ## 15. Arrays
+- Declaration
+```java
+String[] name = new String[3];
+name[0] = "John";
+name[1] = "Bob";
+name[2] = "Alice";
+
+// or 
+
+String[] name = {"John", "Bob", "Alice"};
+```
+- Iteration
+```java
+for (int i = 0; i < name.length; i++) {
+    System.out.println(name[i]);
+}
+
+// or
+
+for (String i : name) {
+    System.out.println(i);
+}
+```
+
+
+<a id="2d-arrays"></a>
+
+## 16. 2D Arrays
