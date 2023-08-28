@@ -24,6 +24,7 @@ Source: https://www.youtube.com/watch?v=xk4_1vDrzzo&t=3305s
 14. [Nested loops](#nested-loops)
 15. [Arrays](#arrays)
 16. [2D Arrays](#2d-arrays)
+17. [String methods](#string-methods)
 
 <a id="run-a-simple-java-program"></a>
 ## 0. Run a simple Java program :card_file_box:
@@ -429,3 +430,39 @@ for (String i : name) {
 <a id="2d-arrays"></a>
 
 ## 16. 2D Arrays
+- Declaration
+```java
+int[][] int_array = {{1, 2, 3}, {4, 5, 6}};
+
+// or
+
+int[][] int_array = new int[2][3];
+
+int_array[0][0] = 1;
+int_array[0][1] = 2;
+int_array[0][2] = 3;
+int_array[1][0] = 4;
+int_array[1][1] = 5;
+int_array[1][2] = 6;
+```
+- Iteration
+```java
+for (int i = 0; i < int_array.length; i++) {
+    for (int j = 0; j < int_array[i].length; j++)
+        System.out.print(int_array[i][j] + " ");
+    System.out.println();
+}
+
+// or
+
+for (int[] a : int_array) {
+    for (int b : a){
+        System.out.print(b + " ");
+    }
+    System.out.println();
+}
+```
+
+<a id="string-methods"></a>
+
+## 17. String methods
