@@ -25,6 +25,7 @@ Source: https://www.youtube.com/watch?v=xk4_1vDrzzo&t=3305s
 15. [Arrays](#arrays)
 16. [2D Arrays](#2d-arrays)
 17. [String methods](#string-methods)
+18. [Wrapper classes](#wrapper-classes)
 
 <a id="run-a-simple-java-program"></a>
 ## 0. Run a simple Java program :card_file_box:
@@ -466,3 +467,32 @@ for (int[] a : int_array) {
 <a id="string-methods"></a>
 
 ## 17. String methods
+```java
+String name = "Java";
+```
+
+| Method | Return type | Output |
+| ------ | ------- | ------ |
+| `name.equals("java")` | `boolean` | `false` |
+| `name.equalsIgnoreCase("java")` | `boolean` | `true` |
+| `name.length()` | `int` | `4` |
+| `name.charAt(0)` | `char` | `J` |
+| `name.indexOf('a')` | `int` | `1` |
+| `name.indexOf('a', fromIndex:2)` | `int` | `3` |
+| `name.indexOf('j', fromIndex:1)` | `int` | `-1` |
+| `name.indexOf("va")` | `int` | `2` |
+| `name.lastIndexOf('a')` | `int` | `3` |
+| `name.isEmpty()` | `boolean` | `false` |
+| `name.toUpperCase()` | `String` | `JAVA` |
+| `name.toLowerCase()` | `String` | `java` |
+| `name.replace('a', '$')` | `String` | `J$v$` |
+| `"    Java  JDK    ".trim()` | `String` | `Java  JDK` |
+
+> **Note:**
+>- `indexOf()` method returns `-1` if the character is not found.
+>- `trim()` method removes white spaces from both sides of the string. " Java JDK " &rarr; "Java  JDK"
+
+
+<a id="wrapper-classes"></a>
+
+## 18. Wrapper classes
