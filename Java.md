@@ -26,6 +26,7 @@ Source: https://www.youtube.com/watch?v=xk4_1vDrzzo&t=3305s
 16. [2D Arrays](#2d-arrays)
 17. [String methods](#string-methods)
 18. [Wrapper classes](#wrapper-classes)
+19. [ArrayList](#arraylist)
 
 <a id="run-a-simple-java-program"></a>
 ## 0. Run a simple Java program :card_file_box:
@@ -496,3 +497,36 @@ String name = "Java";
 <a id="wrapper-classes"></a>
 
 ## 18. Wrapper classes
+Wrapper classes provide a way to use primitive data types as objects.  
+Advantage of wrapper classes is that, we can use them with `collections` (like ArrayList and HashMap) and also they provide many `useful methods`.  
+Disadvantage of wrapper classes is that, it is `slower` than primitive data types.
+
+| Primitive | Wrapper |
+| --------- | ------- |
+| `byte` | `Byte` |
+| `short` | `Short` |
+| `int` | `Integer` |
+| `long` | `Long` |
+| `float` | `Float` |
+| `double` | `Double` |
+| `boolean` | `Boolean` |
+| `char` | `Character` |
+
+* `Autoboxing`: Converting a primitive value into an object of the corresponding wrapper class is called autoboxing.
+```java
+int a = 20;
+Integer x = Integer.valueOf(a);//converting int into Integer explicitly  
+Integer j = a;//autoboxing, now compiler will write Integer.valueOf(a) internally
+```
+
+* `Unboxing`: Converting an object of a wrapper type to its corresponding primitive value is called unboxing.
+```java
+Integer a=new Integer(3);    
+int i=a.intValue();//converting Integer to int explicitly  
+int j=a;//unboxing, now compiler will write a.intValue() internally    
+```
+
+
+<a id="arraylist"></a>
+
+## 19. ArrayList
