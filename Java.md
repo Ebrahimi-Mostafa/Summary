@@ -28,6 +28,7 @@ Source: https://www.youtube.com/watch?v=xk4_1vDrzzo&t=3305s
 18. [Wrapper classes](#wrapper-classes)
 19. [ArrayList](#arraylist)
 20. [2D ArrayList](#2d-arraylist)
+21. [For each loop](#for-each-loop)
 
 <a id="run-a-simple-java-program"></a>
 ## 0. Run a simple Java program :card_file_box:
@@ -568,3 +569,37 @@ cars.clear(); // remove all elements
 <a id="2d-arraylist"></a>
 
 ## 20. 2D ArrayList
+```java
+import java.util.ArrayList;
+
+ArrayList<ArrayList<Integer>> list = new ArrayList<ArrayList<Integer>>();
+
+ArrayList<Integer> row1 = new ArrayList<Integer>();
+row1.add(1);
+row1.add(2);
+row1.add(3);
+
+list.add(row1);
+// list = [[1, 2, 3]]
+
+
+list.add(new ArrayList<Integer>(Arrays.asList(4, 5, 6)));
+// list = [[1, 2, 3], [4, 5, 6]]
+
+
+list.add(new ArrayList<Integer>());
+ArrayList<Integer> row3 = list.get(2);
+row3.add(7);
+row3.add(8);
+row3.add(9);
+// list = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+
+System.out.println(list.get(1).get(2)); // 6
+```
+
+> **Note:** `ArrayList` stores objects. If we want to store other types of data, we need to use `wrapper classes`.
+
+
+<a id="for-each-loop"></a>
+
+## 21. For each loop
