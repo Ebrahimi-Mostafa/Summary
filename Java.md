@@ -27,6 +27,7 @@ Source: https://www.youtube.com/watch?v=xk4_1vDrzzo&t=3305s
 17. [String methods](#string-methods)
 18. [Wrapper classes](#wrapper-classes)
 19. [ArrayList](#arraylist)
+20. [2D ArrayList](#2d-arraylist)
 
 <a id="run-a-simple-java-program"></a>
 ## 0. Run a simple Java program :card_file_box:
@@ -530,3 +531,40 @@ int j=a;//unboxing, now compiler will write a.intValue() internally
 <a id="arraylist"></a>
 
 ## 19. ArrayList
+ArrayList is a resizable array.
+
+```java
+import java.util.ArrayList;
+
+ArrayList<String> cars = new ArrayList<String>();
+
+cars.add("Volvo");
+cars.add("BMW");
+cars.add("Ford");
+
+System.out.println(cars); // [Volvo, BMW, Ford]
+
+cars.set(1, "Benz"); // set -> replace
+
+for (int i = 0; i < cars.size(); i++) {
+    System.out.println(cars.get(i));
+} // Volvo Benz Ford
+
+cars.remove(1); // remove by index
+
+for (String i : cars) {
+    System.out.println(i);
+} // Volvo Ford
+
+cars.add(1, "Benz"); // add by index
+// Volvo Benz Ford
+
+cars.clear(); // remove all elements
+```
+
+> **Note:** `ArrayList` stores objects. If we want to store other types of data, we need to use `wrapper classes`.
+
+
+<a id="2d-arraylist"></a>
+
+## 20. 2D ArrayList
