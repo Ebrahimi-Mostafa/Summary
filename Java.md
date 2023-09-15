@@ -29,6 +29,7 @@ Source: https://www.youtube.com/watch?v=xk4_1vDrzzo&t=3305s
 19. [ArrayList](#arraylist)
 20. [2D ArrayList](#2d-arraylist)
 21. [For each loop](#for-each-loop)
+22. [Methods](#methods)
 
 <a id="run-a-simple-java-program"></a>
 ## 0. Run a simple Java program :card_file_box:
@@ -603,3 +604,40 @@ System.out.println(list.get(1).get(2)); // 6
 <a id="for-each-loop"></a>
 
 ## 21. For each loop
+For each loop is used to iterate through an array or collection.
+
+```java
+ArrayList<String> cars = new ArrayList<String>();
+cars.add("Volvo");
+cars.add("BMW");
+cars.add("Ford");
+
+for (String i : cars) {
+    System.out.println(i);
+}
+/*
+Volvo
+BMW
+Ford
+*/
+```
+
+```java
+int[][] int_array = {{1, 2, 3}, {4, 5, 6}};
+
+for (int[] a : int_array) {
+    for (int b : a){
+        System.out.print(b + " ");
+    }
+    System.out.println();
+}
+/*
+1 2 3
+4 5 6
+*/
+```
+
+
+<a id="methods"></a>
+
+## 22. Methods
