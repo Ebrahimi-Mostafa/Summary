@@ -31,6 +31,7 @@ Source: https://www.youtube.com/watch?v=xk4_1vDrzzo&t=3305s
 21. [For each loop](#for-each-loop)
 22. [Methods](#methods)
 23. [Overloaded Methods](#overloaded-methods)
+24. [Printf](#printf)
 
 <a id="run-a-simple-java-program"></a>
 ## 0. Run a simple Java program :card_file_box:
@@ -693,3 +694,39 @@ static void change(int[] x) {
 <a id="overloaded-methods"></a>
 
 ## 23. Overloaded Methods
+
+- Overloaded methods are methods with the same name but different parameters.
+- method signature `=` method name `+` parameter list
+
+```java
+public static void main(String[] args) {
+    System.out.println(sum(5, 10)); // #1# 15
+    System.out.println(sum(5, 10, 15)); // #2# 30
+
+    System.out.println(sum(5.5, 10.5)); // #3# 16.0
+    System.out.println(sum(5.5, 10.5, 15.5)); // #4# 31.5
+}
+
+static int sum(int a, int b) {
+    System.out.print("#1# ");
+    return a + b;
+}
+static int sum(int a, int b, int c) {
+    System.out.print("#2# ");
+    return a + b + c;
+}
+
+static double sum(double a, double b) {
+    System.out.print("#3# ");
+    return a + b;
+}
+static double sum(double a, double b, double c) {
+    System.out.print("#4# ");
+    return a + b + c;
+}
+```
+
+
+<a id="printf"></a>
+
+## 24. Printf
