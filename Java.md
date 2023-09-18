@@ -30,6 +30,7 @@ Source: https://www.youtube.com/watch?v=xk4_1vDrzzo&t=3305s
 20. [2D ArrayList](#2d-arraylist)
 21. [For each loop](#for-each-loop)
 22. [Methods](#methods)
+23. [Overloaded Methods](#overloaded-methods)
 
 <a id="run-a-simple-java-program"></a>
 ## 0. Run a simple Java program :card_file_box:
@@ -641,3 +642,54 @@ for (int[] a : int_array) {
 <a id="methods"></a>
 
 ## 22. Methods
+```java
+public static void main(String[] args) {
+    System.out.println(sum(5, 10));
+}
+
+static int sum(int a, int b) {
+    return a + b;
+}
+```
+    
+```java
+public static void main(String[] args) {
+    int x = 5;
+    change(x);
+    System.out.println(x); // 5
+}
+
+static void change(int x) {
+    x = 10;
+}
+```
+
+```java
+public static void main(String[] args) {
+    int[] x = {1, 2, 3};
+    change(x);
+    System.out.println(x[0]); // 10
+}
+
+static void change(int[] x) {
+    x[0] = 10;
+}
+```
+
+```java
+public static void main(String[] args) {
+    int[] x = {1, 2, 3};
+    change(x);
+    System.out.println(x[0]); // 1
+}
+
+static void change(int[] x) {
+    x = new int[3];
+    x[0] = 10;
+}
+```
+
+
+<a id="overloaded-methods"></a>
+
+## 23. Overloaded Methods
