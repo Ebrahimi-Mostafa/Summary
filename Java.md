@@ -33,6 +33,7 @@ Source: https://www.youtube.com/watch?v=xk4_1vDrzzo&t=3305s
 23. [Overloaded Methods](#overloaded-methods)
 24. [Printf](#printf)
 25. [Final Keyword](#final-keyword)
+26. [Object](#object)
 
 <a id="run-a-simple-java-program"></a>
 ## 0. Run a simple Java program :card_file_box:
@@ -791,3 +792,14 @@ System.out.printf("The value of x is %c\n", 65);
 <a id="final-keyword"></a>
 
 ## 25. Final Keyword
+- `final` keyword is used to make a variable `constant`.
+
+```java
+final double PI = 3.14;
+PI = 3.1415; // Error
+```
+
+
+<a id="object"></a>
+
+## 26. Object
