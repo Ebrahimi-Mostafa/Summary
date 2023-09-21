@@ -32,6 +32,7 @@ Source: https://www.youtube.com/watch?v=xk4_1vDrzzo&t=3305s
 22. [Methods](#methods)
 23. [Overloaded Methods](#overloaded-methods)
 24. [Printf](#printf)
+25. [Final Keyword](#final-keyword)
 
 <a id="run-a-simple-java-program"></a>
 ## 0. Run a simple Java program :card_file_box:
@@ -730,3 +731,63 @@ static double sum(double a, double b, double c) {
 <a id="printf"></a>
 
 ## 24. Printf
+```java
+System.out.printf("Hello John, your age is %d", 20);
+// Hello John, your age is 20
+```
+
+* two arguments &rarr; format string + (object, variable, value)
+* `%[flags][width][.precision]conversion-character`
+
+| Conversion Character | Description |
+| -------------------- | ----------- |
+| `d` | decimal integer |
+| `f` | floating-point number |
+| `c` | character |
+| `s` | string |
+| `b` | boolean |
+
+| Flag | Description |
+| ---- | ----------- |
+| `-` | left-justify |
+| `+` | output a plus ( + ) or minus ( - ) sign for a numeric value |
+| `0` | numeric values are zero-padded |
+| `,` | comma grouping separator if numbers > 1000 |
+
+| Width | Description |
+| ----- | ----------- |
+| `number` | minimum number of characters to be written as output |
+| `*` (In C language) | width is not specified in the format string, but as an additional integer value argument preceding the argument that has to be formatted |
+
+| Precision | Description |
+| --------- | ----------- |
+| `number` | for floating point number, it specifies the number of digits to be printed after the decimal point |
+| `.*` (In C language) | precision is not specified in the format string, but as an additional integer value argument preceding the argument that has to be formatted |
+
+```java
+System.out.printf("The value of x is %+d\n", 5);
+// The value of x is +5
+
+System.out.printf("The value of x is %05d\n", 5);
+// The value of x is 00005
+
+System.out.printf("The value of x is %10d\n", 5);
+// The value of x is          5
+
+System.out.printf("The value of x is %,d\n", 12345678);
+// The value of x is 12,345,678
+
+System.out.printf("The value of x is %.2f\n", 5.14614);
+// The value of x is 5.15
+
+System.out.printf("The value of x is %.2f\n", 5.1);
+// The value of x is 5.10
+
+System.out.printf("The value of x is %c\n", 65);
+// The value of x is A
+```
+
+
+<a id="final-keyword"></a>
+
+## 25. Final Keyword
