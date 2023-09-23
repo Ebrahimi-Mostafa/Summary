@@ -33,7 +33,8 @@ Source: https://www.youtube.com/watch?v=xk4_1vDrzzo&t=3305s
 23. [Overloaded Methods](#overloaded-methods)
 24. [Printf](#printf)
 25. [Final Keyword](#final-keyword)
-26. [Object](#object)
+26. [Object](#object)  
+    27. [Constructors](#object-constructors)
 
 <a id="run-a-simple-java-program"></a>
 ## 0. Run a simple Java program :card_file_box:
@@ -803,3 +804,48 @@ PI = 3.1415; // Error
 <a id="object"></a>
 
 ## 26. Object
+
+```java
+// Car.java
+public class Car {
+    String make = "Ford";
+    String model = "Mustang";
+    String color = "Black";
+    int year = 2020;
+
+    void drive() {
+        System.out.println("You drive the car");
+    }
+    void brake() {
+        System.out.println("You step on the brakes");
+    }
+}
+```
+
+```java
+// Main.java
+public class Main {
+    public static void main(String[] args) {
+        Car myCar = new Car();
+        System.out.println(myCar.make); // Ford
+        System.out.println(myCar.model); // Mustang
+        myCar.drive(); // You drive the car
+
+        Car myCar2 = new Car();
+        myCar2.make = "BMW";
+        myCar2.model = "X5";
+        myCar2.color = "White";
+        myCar2.year = 2021;
+        System.out.println(myCar2.make); // BMW
+        System.out.println(myCar2.model); // X5
+        myCar2.drive(); // You drive the car
+    }
+}
+```
+
+> **Note:** `new` keyword is used to create an object.
+
+
+<a id="object-constructors"></a>
+
+## 27. Constructors
