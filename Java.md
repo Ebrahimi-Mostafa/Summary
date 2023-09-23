@@ -34,7 +34,7 @@ Source: https://www.youtube.com/watch?v=xk4_1vDrzzo&t=3305s
 24. [Printf](#printf)
 25. [Final Keyword](#final-keyword)
 26. [Object](#object)  
-    27. [Constructors](#object-constructors)
+27. [Object Constructors](#object-constructors)
 28. [Variable Scope](#variable-scope)
 
 <a id="run-a-simple-java-program"></a>
@@ -849,7 +849,7 @@ public class Main {
 
 <a id="object-constructors"></a>
 
-## 27. Constructors
+## 27. Object Constructors
 * A constructor in Java is a special method that is used to initialize objects.
 * The constructor is called when an object of a class is created.
 * It can be used to set initial values for object attributes.
