@@ -35,6 +35,7 @@ Source: https://www.youtube.com/watch?v=xk4_1vDrzzo&t=3305s
 25. [Final Keyword](#final-keyword)
 26. [Object](#object)  
     27. [Constructors](#object-constructors)
+28. [Variable Scope](#variable-scope)
 
 <a id="run-a-simple-java-program"></a>
 ## 0. Run a simple Java program :card_file_box:
@@ -849,3 +850,48 @@ public class Main {
 <a id="object-constructors"></a>
 
 ## 27. Constructors
+* A constructor in Java is a special method that is used to initialize objects.
+* The constructor is called when an object of a class is created.
+* It can be used to set initial values for object attributes.
+
+```java
+// Human.java
+public class Human {
+    String name;
+    int age;
+
+    public Human(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    public void introduce() {
+        System.out.println("Hello, my name is " + name + " and I am " + age + " years old.");
+    }
+    // Or
+    public void introduce_v2() {
+        System.out.println("Hello, my name is " + this.name + " and I am " + this.age + " years old.");
+    }
+}
+```
+
+```java
+// Main.java
+public class Main {
+    public static void main(String[] args) {
+        Human john = new Human("John", 20);
+        john.introduce(); // Hello, my name is John and I am 20 years old.
+        john.introduce_v2(); // Hello, my name is John and I am 20 years old.
+
+        Human bob = new Human("Bob", 25);
+        bob.introduce(); // Hello, my name is Bob and I am 25 years old.
+    }
+}
+```
+
+> **Note:** `this` keyword is used to refer to the current object.
+
+
+<a id="variable-scope"></a>
+
+## 28. Variable Scope
