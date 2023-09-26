@@ -38,6 +38,7 @@ Source: https://www.youtube.com/watch?v=xk4_1vDrzzo&t=3305s
 28. [Variable Scope](#variable-scope)
 29. [Overloading Constructors](#overloading-constructors)
 30. [ToString Method](#tostring-method)
+31. [Array of Objects](#array-of-objects)
 
 <a id="run-a-simple-java-program"></a>
 ## 0. Run a simple Java program :card_file_box:
@@ -959,3 +960,43 @@ public class Main {
 <a id="tostring-method"></a>
 
 ## 30. ToString Method
+* The `toString()` method returns the string representation of the object.
+* If we print an object, java compiler internally invokes the `toString()` method on the object.
+* We can call `toString()` method implicitly or explicitly.
+
+```java
+// Human.java
+public class Human {
+    String name;
+    int age;
+
+    public Human(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    public String toString() {
+        return "Hello, my name is " + name + " and I am " + age + " years old.";
+    }
+}
+```
+
+```java
+// Main.java
+public class Main {
+    public static void main(String[] args) {
+        Human john = new Human("John", 20);
+
+        // Implicitly
+        System.out.println(john); // Hello, my name is John and I am 20 years old.
+
+        // Explicitly
+        System.out.println(john.toString()); // Hello, my name is John and I am 20 years old.
+    }
+}
+```
+
+
+<a id="array-of-objects"></a>
+
+## 31. Array of Objects
