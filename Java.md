@@ -36,6 +36,7 @@ Source: https://www.youtube.com/watch?v=xk4_1vDrzzo&t=3305s
 26. [Object](#object)  
 27. [Object Constructors](#object-constructors)
 28. [Variable Scope](#variable-scope)
+29. [Overloading Constructors](#overloading-constructors)
 
 <a id="run-a-simple-java-program"></a>
 ## 0. Run a simple Java program :card_file_box:
@@ -895,3 +896,23 @@ public class Main {
 <a id="variable-scope"></a>
 
 ## 28. Variable Scope
+* The scope of a variable is the part of the program where the variable is accessible.
+* Variables declared within a method are `local` variables.
+* Variables declared outside a method are 'global' variables.
+
+```java
+public class Main {
+    int x = 5; // global variable
+
+    public static void main(String[] args) {
+        int y = 10; // local variable
+        System.out.println(x); // 5
+        System.out.println(y); // 10
+    }
+}
+```
+
+
+<a id="overloading-constructors"></a>
+
+## 29. Overloading Constructors
