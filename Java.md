@@ -37,6 +37,7 @@ Source: https://www.youtube.com/watch?v=xk4_1vDrzzo&t=3305s
 27. [Object Constructors](#object-constructors)
 28. [Variable Scope](#variable-scope)
 29. [Overloading Constructors](#overloading-constructors)
+30. [ToString Method](#tostring-method)
 
 <a id="run-a-simple-java-program"></a>
 ## 0. Run a simple Java program :card_file_box:
@@ -916,3 +917,45 @@ public class Main {
 <a id="overloading-constructors"></a>
 
 ## 29. Overloading Constructors
+* Overloaded constructors allow us to have more than one constructor with different parameters.
+* name + parameter list = method signature
+
+```java
+// Human.java
+public class Human {
+    String name;
+    int age;
+
+    public Human() {
+        name = "John";
+        age = 20;
+    }
+
+    public Human(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    public void introduce() {
+        System.out.println("Hello, my name is " + name + " and I am " + age + " years old.");
+    }
+}
+```
+
+```java
+// Main.java
+public class Main {
+    public static void main(String[] args) {
+        Human john = new Human();
+        john.introduce(); // Hello, my name is John and I am 20 years old.
+
+        Human bob = new Human("Bob", 25);
+        bob.introduce(); // Hello, my name is Bob and I am 25 years old.
+    }
+}
+```
+
+
+<a id="tostring-method"></a>
+
+## 30. ToString Method
