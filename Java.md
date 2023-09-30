@@ -39,6 +39,7 @@ Source: https://www.youtube.com/watch?v=xk4_1vDrzzo&t=3305s
 29. [Overloading Constructors](#overloading-constructors)
 30. [ToString Method](#tostring-method)
 31. [Array of Objects](#array-of-objects)
+32. [Object Passing](#object-passing)
 
 <a id="run-a-simple-java-program"></a>
 ## 0. Run a simple Java program :card_file_box:
@@ -1000,3 +1001,82 @@ public class Main {
 <a id="array-of-objects"></a>
 
 ## 31. Array of Objects
+```java
+// Food.java
+public class Food {
+    String name;
+    
+    Food (String name) {
+        this.name = name;
+    }
+}
+```
+
+```java
+// Main.java
+public class Main {
+    public static void main(String[] args) {
+        Food[] foods1 = {new Food("Pizza"), new Food("Hamburger"), new Food("Hotdog")};
+
+        for (int i = 0; i < foods1.length; i++) {
+                System.out.println(foods1[i].name);
+        }
+        /*
+        Pizza
+        Hamburger
+        Hotdog
+        */
+    }
+}
+```
+or
+```java
+// Main.java
+public class Main {
+    public static void main(String[] args) {
+        Food[] foods2 = new Food[3];
+        foods2[0] = new Food("Pizza");
+        foods2[1] = new Food("Hamburger");
+        foods2[2] = new Food("Hotdog");
+
+        for (int i = 0; i < foods2.length; i++) {
+                System.out.println(foods2[i].name);
+        }
+        /*
+        Pizza
+        Hamburger
+        Hotdog
+        */
+    }
+}
+```
+or
+```java
+// Main.java
+public class Main {
+    public static void main(String[] args) {
+        Food[] foods3 = new Food[3];
+        Food food1 = new Food("Pizza");
+        Food food2 = new Food("Hamburger");
+        Food food3 = new Food("Hotdog");
+
+        foods3[0] = food1;
+        foods3[1] = food2;
+        foods3[2] = food3;
+
+        for (Food i : foods3) {
+                System.out.println(i.name);
+        }
+        /*
+        Pizza
+        Hamburger
+        Hotdog
+        */
+    }
+}
+```
+
+
+<a id="arraylist-of-objects"></a>
+
+## 32. ArrayList of Objects
