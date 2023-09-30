@@ -93,3 +93,10 @@ Source: [YouTube](https://youtu.be/tw07ctwa7_8)
 
 - `Ctrl + r`: Search command history.
 - `history`: View command history.
+
+## Hashes
+
+- `shasum "Path/file_name"`: Print or Check SHA Checksums
+  - `-a`: Specify the algorithm.
+    - `256`: SHA-256
+    - `512`: SHA-512
