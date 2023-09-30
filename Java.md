@@ -40,6 +40,7 @@ Source: https://www.youtube.com/watch?v=xk4_1vDrzzo&t=3305s
 30. [ToString Method](#tostring-method)
 31. [Array of Objects](#array-of-objects)
 32. [Object Passing](#object-passing)
+33. [Static Keyword](#static-keyword)
 
 <a id="run-a-simple-java-program"></a>
 ## 0. Run a simple Java program :card_file_box:
@@ -1077,6 +1078,45 @@ public class Main {
 ```
 
 
-<a id="arraylist-of-objects"></a>
+<a id="object-passing"></a>
 
-## 32. ArrayList of Objects
+## 32. Object Passing
+```java
+// Car.java
+public class Car {
+    String name;
+
+    Car(String name) {
+        this.name = name;
+    }
+}
+
+// Garage.java
+public class Garage {
+    
+    void park(Car car) {
+        System.out.println("The " + car.name + " is parked in the garage.");
+    }
+}
+```
+
+```java
+// Main.java
+public class Main {
+    public static void main(String[] args) {
+        Car car1 = new Car("BMW");
+        Car car2 = new Car("Mercedes");
+
+        Garage garage = new Garage();
+        garage.park(car1); // The BMW is parked in the garage.
+        garage.park(car2); // The Mercedes is parked in the garage.
+    }
+}
+```
+
+> **Note:** When we pass an object to a method, we are passing the `reference` of the object.
+
+
+<a id="static-keyword"></a>
+
+## 33. Static Keyword
