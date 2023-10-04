@@ -41,6 +41,7 @@ Source: https://www.youtube.com/watch?v=xk4_1vDrzzo&t=3305s
 31. [Array of Objects](#array-of-objects)
 32. [Object Passing](#object-passing)
 33. [Static Keyword](#static-keyword)
+34. [Inheritance](#inheritance)
 
 <a id="run-a-simple-java-program"></a>
 ## 0. Run a simple Java program :card_file_box:
@@ -1120,3 +1121,49 @@ public class Main {
 <a id="static-keyword"></a>
 
 ## 33. Static Keyword
+* `static` keyword is used to create `variables` and `methods` that will exist independently of any instances created for the class and `The class owns the static member`.
+
+```java
+// Car.java
+public class Car {
+    String name;
+    static int count = 0;
+
+    Car(String name) {
+        this.name = name;
+        count++;
+    }
+
+    static void showCount() {
+        System.out.println("Total cars: " + count);
+    }
+}
+```
+
+```java
+// Main.java
+public class Main {
+    public static void main(String[] args) {
+
+        System.out.println(Car.count); // 0
+        Car.showCount(); // Total cars: 0
+
+        Car car1 = new Car("BMW");
+        System.out.println(Car.count); // 1
+
+        Car car2 = new Car("Mercedes");
+        System.out.println(Car.count); // 2
+
+        Car car3 = new Car("Audi");
+        System.out.println(Car.count); // 3
+        Car.showCount(); // Total cars: 3
+    }
+}
+```
+
+> **Note:** We can access `static` variables and methods without creating an object of the class.
+
+
+<a id="inheritance"></a>
+
+## 34. Inheritance
