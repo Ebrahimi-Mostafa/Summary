@@ -42,6 +42,7 @@ Source: https://www.youtube.com/watch?v=xk4_1vDrzzo&t=3305s
 32. [Object Passing](#object-passing)
 33. [Static Keyword](#static-keyword)
 34. [Inheritance](#inheritance)
+35. [Method Overriding](#method-overriding)
 
 <a id="run-a-simple-java-program"></a>
 ## 0. Run a simple Java program :card_file_box:
@@ -1167,3 +1168,51 @@ public class Main {
 <a id="inheritance"></a>
 
 ## 34. Inheritance
+* Inheritance allows us to create a class that inherits the attributes and methods of another class.
+* `extends` keyword is used to inherit from a class.
+
+```java
+// Vehicle.java
+public class Vehicle {
+    
+    double speed;
+
+    void go() {
+        System.out.println("This vehicle is moving.");
+    }
+}
+
+// Car.java
+public class Car extends Vehicle {
+}
+
+// Bike.java
+public class Bike extends Vehicle {
+    
+    double speed = 100;
+}
+```
+
+```java
+// Main.java
+public class Main {
+    public static void main(String[] args) {
+        Car car = new Car();
+        System.out.println(car.speed); // 0
+        car.speed = 200;
+        System.out.println(car.speed); // 200
+        car.go(); // This vehicle is moving.
+
+        Bike bike = new Bike();
+        System.out.println(bike.speed); // 100
+        bike.speed = 110;
+        System.out.println(bike.speed); // 110
+        bike.go(); // This vehicle is moving.
+    }
+}
+```
+
+
+<a id="method-overriding"></a>
+
+## 35. Method Overriding
