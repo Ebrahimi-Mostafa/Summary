@@ -43,6 +43,7 @@ Source: https://www.youtube.com/watch?v=xk4_1vDrzzo&t=3305s
 33. [Static Keyword](#static-keyword)
 34. [Inheritance](#inheritance)
 35. [Method Overriding](#method-overriding)
+36. [Super Keyword](#super-keyword)
 
 <a id="run-a-simple-java-program"></a>
 ## 0. Run a simple Java program :card_file_box:
@@ -1216,3 +1217,47 @@ public class Main {
 <a id="method-overriding"></a>
 
 ## 35. Method Overriding
+* Method overriding is used to provide the specific implementation of a method which is already provided by its superclass.
+
+```java
+// Vehicle.java
+public class Vehicle {
+    void go() {
+        System.out.println("This vehicle is moving.");
+    }
+}
+
+// Car.java
+public class Car extends Vehicle {
+    void go() {
+        System.out.println("This car is moving.");
+    }
+}
+
+// Bike.java
+public class Bike extends Vehicle {
+}
+```
+
+```java
+// Main.java
+public class Main {
+    public static void main(String[] args) {
+        Vehicle vehicle = new Vehicle();
+        vehicle.go(); // This vehicle is moving.
+
+        Car car = new Car();
+        car.go(); // This car is moving.
+
+        Bike bike = new Bike();
+        bike.go(); // This vehicle is moving.
+    }
+}
+```
+
+> **Note:** We can't override `static` methods.
+
+
+<a id="super-keyword"></a>
+
+## 36. Super Keyword
