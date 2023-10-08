@@ -44,6 +44,7 @@ Source: https://www.youtube.com/watch?v=xk4_1vDrzzo&t=3305s
 34. [Inheritance](#inheritance)
 35. [Method Overriding](#method-overriding)
 36. [Super Keyword](#super-keyword)
+37. [Abstraction](#abstraction)
 
 <a id="run-a-simple-java-program"></a>
 ## 0. Run a simple Java program :card_file_box:
@@ -1261,3 +1262,40 @@ public class Main {
 <a id="super-keyword"></a>
 
 ## 36. Super Keyword
+* `super` keyword is used to refer to the immediate parent class object.
+* `super()` is used to invoke the parent class constructor.
+* `super` can be used to invoke parent class method and constructor and also used to refer parent class variable.
+
+```java
+// Vehicle.java
+public class Vehicle {
+    String name = "Vehicle";
+
+    void go() {
+        System.out.println("This vehicle is moving.");
+    }
+}
+
+// Car.java
+public class Car extends Vehicle {
+    String name = "Car";
+
+    void go() {
+        System.out.println("This car is moving.");
+    }
+
+    void show() {
+        System.out.println(name); // Car
+        System.out.println(this.name); // Car
+        System.out.println(super.name); // Vehicle
+        System.out.println(go()); // This car is moving.
+        System.out.println(this.go()); // This car is moving.
+        System.out.println(super.go()); // This vehicle is moving.
+    }
+}
+```
+
+
+<a id="abstractio"></a>
+
+## 37. Abstraction
