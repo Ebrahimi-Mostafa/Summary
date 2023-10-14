@@ -46,6 +46,7 @@ Source: https://www.youtube.com/watch?v=xk4_1vDrzzo&t=3305s
 36. [Super Keyword](#super-keyword)
 37. [Abstraction](#abstraction)
 38. [Access Modifiers](#access-modifiers)
+39. [Encapsulation](#encapsulation)
 
 <a id="run-a-simple-java-program"></a>
 ## 0. Run a simple Java program :card_file_box:
@@ -1334,3 +1335,15 @@ public class Main {
 <a id="access-modifiers"></a>
 
 ## 38. Access Modifiers
+
+| Modifier | Class | Package | Subclass | World |
+| -------- | ----- | ------- | -------- | ----- |
+| `public` | Y | Y | Y | Y |
+| `protected` | Y | Y | Y | N |
+| `no modifier` | Y | Y | N | N |
+| `private` | Y | N | N | N |
+
+
+<a id="encapsulation"></a>
+
+## 39. Encapsulation
