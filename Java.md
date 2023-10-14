@@ -45,6 +45,7 @@ Source: https://www.youtube.com/watch?v=xk4_1vDrzzo&t=3305s
 35. [Method Overriding](#method-overriding)
 36. [Super Keyword](#super-keyword)
 37. [Abstraction](#abstraction)
+38. [Access Modifiers](#access-modifiers)
 
 <a id="run-a-simple-java-program"></a>
 ## 0. Run a simple Java program :card_file_box:
@@ -1299,3 +1300,37 @@ public class Car extends Vehicle {
 <a id="abstractio"></a>
 
 ## 37. Abstraction
+* `abstract` keyword is used to create an abstract class and abstract method.
+    * `abstract class` can't be instantiated.
+    * `abstract method` doesn't have a body.
+
+```java
+// Vehicle.java
+public abstract class Vehicle {
+    abstract void go();
+}
+
+// Car.java
+public class Car extends Vehicle {
+    @Override
+    void go() {
+        System.out.println("This car is moving.");
+    }
+}
+```
+
+```java
+// Main.java
+public class Main {
+    public static void main(String[] args) {
+        Vehicle vehicle = new Vehicle(); // Error
+        Car car = new Car();
+        car.go(); // This car is moving.
+    }
+}
+```
+
+
+<a id="access-modifiers"></a>
+
+## 38. Access Modifiers
