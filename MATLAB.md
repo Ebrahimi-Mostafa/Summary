@@ -1,5 +1,33 @@
 # MATLAB
 
+# Table of Contents
+  - [SESSION 1](#session-1)
+    - [Basic Commands](#basic-commands)
+    - [Matrix and Transpose](#matrix-and-transpose)
+    - [Help and Documentation](#help-and-documentation)
+    - [File I/O](#file-io)
+    - [Commenting](#commenting)
+    - [Random Numbers](#random-numbers)
+    - [Generating Sequences](#generating-sequences)
+    - [Script Execution](#script-execution)
+    - [String Formatting](#string-formatting)
+    - [Figure and Plot](#figure-and-plot)
+    - [Comparison](#comparison)
+    - [Function](#function)
+    - [Arrays](#arrays)
+    - [Rounding](#rounding)
+    - [Looping](#looping)
+  - [SESSION 2](#session-2)
+    - [Matrix and Indexing](#matrix-and-indexing)
+    - [Strings and Concatenation](#strings-and-concatenation)
+    - [Cells and Structs](#cells-and-structs)
+    - [File and Image Operations](#file-and-image-operations)
+    - [User Interface](#user-interface)
+    - [Image Processing](#image-processing)
+    - [Image Processing - Finding Coordinates](#image-processing-finding-coordinates)
+    - [Array Operations](#array-operations)
+    - [File Writing](#file-writing)
+
 ## SESSION 1
 Source: [YouTube](https://www.youtube.com/watch?v=En4wcQnY2Og&list=WL&index=7&t=651s)
 
