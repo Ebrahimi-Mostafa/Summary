@@ -11,14 +11,14 @@ Welcome to my summary repository! This repository contains summaries of various 
 ### List of Summaries :scroll:
 - [Computer_Network.md](Computer_Network.md) :globe_with_meridians:
 - [Docker.md](Docker.md) :whale:
-- [Excel.md](Excel.md) :bar_chart:
 - [Git.md](Git.md) :octocat:
-- [Java.md](Java.md) :coffee:
-- [JavaScript.md](JavaScript.md) :computer:
-- [macOS-Shortcut.md](macOS-Shortcut.md) :keyboard:
 - [MATLAB.md](MATLAB.md) :chart_with_upwards_trend:
 - [Markdown.md](Markdown.md) :pencil:
 - [SQL.md](SQL.md) :floppy_disk:
 - [Terminal.md](Terminal.md) :computer:
 - [Tmux.md](Tmux.md) :pager:
 - [Vim.md](Vim.md) :memo:
+<!-- - [Excel.md](Excel.md) :bar_chart: -->
+<!-- - [Java.md](Java.md) :coffee: -->
+<!-- - [JavaScript.md](JavaScript.md) :computer: -->
+<!-- - [macOS-Shortcut.md](macOS-Shortcut.md) :keyboard: -->
