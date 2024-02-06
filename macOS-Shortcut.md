@@ -5,6 +5,7 @@
 - [Finder](#Finder)
 - [Windows](#Windows)
 - [Tabs](#tabs)
+- [Text Editing](#Text-Editing)
 - [Other](#Other)
 
 <a id="Screenshots"></a>
@@ -38,9 +39,13 @@
     - shift + cmd + '{' &rarr; Switches active tab to left
 - shift + cmd + t &rarr; Reopen last closed tab
 
-<a id="Other"></a>
-## Other
-- option + shift + cmd + v &rarr; Paste and match style
-- shift + cmd + '?' &rarr; Open the help menu
+<a id="Text-Editing"></a>
+## Text Editing
 - Delete &rarr; Remove previous character
 - Delete + fn &rarr; Remove next character
+- option + shift + cmd + v &rarr; Paste and match style
+
+
+<a id="Other"></a>
+## Other
+- shift + cmd + '?' &rarr; Open the help menu
