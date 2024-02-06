@@ -6,6 +6,7 @@
 - [Windows](#Windows)
 - [Tabs](#tabs)
 - [Text Editing](#Text-Editing)
+- [Browser](#Browser)
 - [Global](#Global)
 
 <a id="Screenshots"></a>
@@ -29,6 +30,8 @@
 - shift + cmd + w &rarr; Close window
 - cmd + h &rarr; Hide all windows of active app(minimized to dock)
 - cmd + m &rarr; Minimize active window to dock
+- cmd + n &rarr; Open new window
+- cmd + ` &rarr; Switch between windows of active app
 
 
 
@@ -36,10 +39,9 @@
 <a id="Tabs"></a>
 ## Tabs
 - Switch active tabs:
-    - control + tab &rarr; Switches active tab to right
-    - shift + control + tab &rarr; Switches active tab to left
     - shift + cmd + '}' &rarr; Switches active tab to right
     - shift + cmd + '{' &rarr; Switches active tab to left
+- cmd + w &rarr; Close tab
 - shift + cmd + t &rarr; Reopen last closed tab
 
 <a id="Text-Editing"></a>
@@ -48,9 +50,18 @@
 - delete + fn &rarr; Remove next character
 - option + shift + cmd + v &rarr; Paste and match style
 
+<a id="Browser"></a>
+## Browser
+- cmd + r &rarr; Refresh page
+- cmd + l &rarr; Select address bar
 
 <a id="Global"></a>
- ## Global
+## Global
+- cmd + select file &rarr; Select multiple files
+- space &rarr; Quick look(preview)
 - cmd + space &rarr; Open spotlight search
 - cmd + q &rarr; Quit active app
 - shift + cmd + '?' &rarr; Open the help menu
+- cmd + tab &rarr; Switch between apps to the right
+- cmd + tab + shift &rarr; Switch between apps to the left
+- cmd + control + q &rarr; Lock screen
