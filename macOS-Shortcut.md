@@ -10,7 +10,9 @@
 
 <a id="Screenshots"></a>
 ## Screenshots
-- Shift + cmd + 5 &rarr; Open screenshot app
+- shift + cmd + 3 &rarr; Take a screenshot of the entire screen
+- shift + cmd + 4 &rarr; Take a screenshot of a selected area
+- shift + cmd + 5 &rarr; Open screenshot app
 
 
 <a id="Finder"></a>
@@ -26,6 +28,7 @@
 ## Windows
 - shift + cmd + w &rarr; Close window
 - cmd + h &rarr; Hide all windows of active app(minimized to dock)
+- cmd + m &rarr; Minimize active window to dock
 
 
 
@@ -41,11 +44,13 @@
 
 <a id="Text-Editing"></a>
 ## Text Editing
-- Delete &rarr; Remove previous character
-- Delete + fn &rarr; Remove next character
+- delete &rarr; Remove previous character
+- delete + fn &rarr; Remove next character
 - option + shift + cmd + v &rarr; Paste and match style
 
 
 <a id="Global"></a>
-## Global
+ ## Global
+- cmd + space &rarr; Open spotlight search
+- cmd + q &rarr; Quit active app
 - shift + cmd + '?' &rarr; Open the help menu
