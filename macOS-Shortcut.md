@@ -6,7 +6,7 @@
 - [Windows](#Windows)
 - [Tabs](#tabs)
 - [Text Editing](#Text-Editing)
-- [Other](#Other)
+- [Global](#Global)
 
 <a id="Screenshots"></a>
 ## Screenshots
@@ -46,6 +46,6 @@
 - option + shift + cmd + v &rarr; Paste and match style
 
 
-<a id="Other"></a>
-## Other
+<a id="Global"></a>
+## Global
 - shift + cmd + '?' &rarr; Open the help menu
