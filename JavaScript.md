@@ -14,7 +14,7 @@ Source: https://www.youtube.com/watch?v=8dWL3wF_OMw
 5. [Type conversion](#Type-conversion)
 6. [Const](#Const)
 7. [Math](#Math)
-8. [Hypotenuse calc practice program](#Hypotenuse-calc-practice-program)
+<!-- 8. Counter program -->
 
 
 <a id="Setup"></a>  
@@ -98,7 +98,7 @@ window.alert("HELLO WORLD");
     ```
     > **Note:** single quotes `'` and double quotes `"` are the same for representing a string in JavaScript.  
 
-    > **Note:** For boolean values, use `true` and `false` (without quotes).
+    > **Note:** For boolean values, use `true` and `false`
 
     String + Number &rarr; String
 
@@ -272,7 +272,3 @@ window.alert("HELLO WORLD");
     x = Math.PI // 3.141592653589793
     x = Math.E  // 2.718281828459045
     ```
-
-
-<a id="Hypotenuse-calc-practice-program"></a>
-## 8. Hypotenuse calc practice program
