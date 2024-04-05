@@ -72,6 +72,10 @@ Source: [YouTube](https://youtu.be/tw07ctwa7_8)
 - `grep word "Path/file_name"`: Search for a specific word in a file.
 - `open "Path/file_name"`: Open a file in its default application.
   - `open -a "Application"`: open Application.
+- `shred "Path/file_name"`: Overwrite a file with random data to hide its contents.
+  - `-u`: Remove the file after overwriting it. 
+  - `-v`: Show progress.
+  - `-z`: Add a final overwrite with zeros to hide shredding.
 
 
 ## Advanced Commands
