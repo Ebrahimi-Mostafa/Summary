@@ -23,6 +23,11 @@ Source: [YouTube](https://youtu.be/tw07ctwa7_8)
 - `ls -lh`: List files and directories in long format with human-readable sizes.
 - `ls -ltr`: List files and directories in long format, sorted by modification time (oldest first).
 - `ls -ltrh`: List files and directories in long format, sorted by modification time with human-readable sizes.
+- `ls -s`: List files and directories with their sizes.
+- `ls -sh`: List files and directories with their sizes in human-readable format.
+- `ls -a`: List all files and directories, including hidden ones.
+- `ls -1`: List files and directories in a single column.
+
 
 ### Clearing the Terminal
 - `clear`: Clear the terminal screen.
@@ -47,6 +52,7 @@ Source: [YouTube](https://youtu.be/tw07ctwa7_8)
 - `less "Path/file_name"`: View the contents of a file using a pager.
 - `file "Path/file_name"`: It use signatures and magic numbers to determine the file type.
 - `head "Path/file_name"`: Display the first 10 lines of a file.
+- `tail "Path/file_name"`: Display the last 10 lines of a file.
 - `od "Path/file_name"`: Display the contents of a file in octal format. Some useful options:
   - `-c`: Display the contents of a file in ASCII format(Characters) per byte.
   - `-b`: Display the contents of a file in octal format per byte.
@@ -56,7 +62,10 @@ Source: [YouTube](https://youtu.be/tw07ctwa7_8)
     - `-Ad`: Display offsets in decimal format.
   - `-w`: Customize the output width.
     - `w4`: Display 4 byte per line.
-
+- `wc "Path/file_name"`: Display the number of lines, words, and characters in a file.(wc stands for word count)
+  - `-l`: Display the number of lines.
+  - `-w`: Display the number of words.
+  - `-c`: Display the number of characters.
 
 ### Searching within Files & Editing Files
 - `Vim "Path/file_name"`: Open a file in Vim (text editor). To enable syntax highlighting, type "syntax on" within Vim.
