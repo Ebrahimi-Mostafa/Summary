@@ -17,6 +17,7 @@
 - `git diff filename`: Show changes in filename
 - `git restore --staged filename` (or `git reset filename`): Unstage changes in filename
 - `git restore filename` (or `git checkout -- filename`): Discard changes in filename
+- `git restore .` (or `git checkout -- .`): Discard all changes
 
 ### Branches and Merging:
 - `git branch`: List branches
