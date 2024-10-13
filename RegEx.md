@@ -21,6 +21,8 @@ Source: https://www.youtube.com/watch?v=m2zlSAsePNg&list=WL&index=37&t=569s
 * `Character classes`
     * `[abc]` &rarr; Matches `a`, `b`, or `c`.
         * `a[bc]` &rarr; Matches `ab` or `ac`.
+    * `|` &rarr; OR operator.
+        * `a|b|c` &rarr; Matches `a`, `b`, or `c`.
     * `[^abc]` &rarr; Matches anything that is not `a`, `b`, or `c`.    
     * `[0-9]` &rarr; Matches any digit.
     * `[a-z]` &rarr; Matches any lowercase letter.
