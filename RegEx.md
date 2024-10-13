@@ -21,16 +21,27 @@ Source: https://www.youtube.com/watch?v=m2zlSAsePNg&list=WL&index=37&t=569s
 * `Character classes`
     * `[abc]` &rarr; Matches `a`, `b`, or `c`.
         * `a[bc]` &rarr; Matches `ab` or `ac`.
+    * `[^abc]` &rarr; Matches anything that is not `a`, `b`, or `c`.    
     * `[0-9]` &rarr; Matches any digit.
-
-<!-- See until 07:07 -->
-
-
-
-<!-- 
-    * `[abc]` &rarr; Matches `a`, `b`, or `c`.
     * `[a-z]` &rarr; Matches any lowercase letter.
     * `[A-Z]` &rarr; Matches any uppercase letter.
-    * `[0-9]` &rarr; Matches any digit.
-    * `[a-zA-Z0-9]` &rarr; Matches any alphanumeric character.
-    * `[^abc]` &rarr; Matches anything that is not `a`, `b`, or `c`. -->
+    * `.` &rarr; Matches any character except newline.
+    * `\.` &rarr; Matches a period.
+    * `{}` &rarr; Matches a specific number of occurrences.
+        * `a{3}` &rarr; Matches `aaa`.
+        * `a{1,3}` &rarr; Matches `a`, `aa`, or `aaa`.
+        * `a{1,}` &rarr; Matches `a` one or more times.
+        * `a{0,}` &rarr; Matches `a` zero or more times.
+    * `+` &rarr; Matches one or more of the preceding character.
+        * `sa+` &rarr; Matches `sa`, `saa`, `saaa`, etc.
+    * `*` &rarr; Matches zero or more of the preceding character.
+    * `?` &rarr; Matches zero or one of the preceding character.
+    * `\d` &rarr; Matches any digit.
+    * `\D` &rarr; Matches any non-digit.
+    * `\s` &rarr; Matches any whitespace character.
+    * `\S` &rarr; Matches any non-whitespace character.
+    * `\w` &rarr; Matches any alphanumeric character.
+    * `\W` &rarr; Matches any non-alphanumeric character.
+* Regex is `Greedy` by default.
+    * `*?` &rarr; Matches zero or more of the preceding character in a non-greedy way.
+    * `+?` &rarr; Matches one or more of the preceding character in a non-greedy way.
