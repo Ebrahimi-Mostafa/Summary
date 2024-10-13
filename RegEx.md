@@ -25,6 +25,7 @@ Source: https://www.youtube.com/watch?v=m2zlSAsePNg&list=WL&index=37&t=569s
     * `[0-9]` &rarr; Matches any digit.
     * `[a-z]` &rarr; Matches any lowercase letter.
     * `[A-Z]` &rarr; Matches any uppercase letter.
+        * Special characters (., *, +, ?) lose their special meaning inside [].  
     * `.` &rarr; Matches any character except newline.
     * `\.` &rarr; Matches a period.
     * `{}` &rarr; Matches a specific number of occurrences.
