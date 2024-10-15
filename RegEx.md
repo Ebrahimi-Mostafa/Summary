@@ -45,6 +45,19 @@ Source: https://www.youtube.com/watch?v=m2zlSAsePNg&list=WL&index=37&t=569s
     * `\S` &rarr; Matches any non-whitespace character.
     * `\w` &rarr; Matches any alphanumeric character.
     * `\W` &rarr; Matches any non-alphanumeric character.
+    * `\b` &rarr; Matches a word boundary, it's non-alphanumeric character(it is a zero-width match).
 * Regex is `Greedy` by default.
     * `*?` &rarr; Matches zero or more of the preceding character in a non-greedy way.
     * `+?` &rarr; Matches one or more of the preceding character in a non-greedy way.
+* Lookahead and Lookbehind
+    * `(?=...)` &rarr; Positive lookahead.
+    * `(?!...)` &rarr; Negative lookahead.
+    * `(?<=...)` &rarr; Positive lookbehind.
+    * `(?<!...)` &rarr; Negative lookbehind.
+    > Lookahead and lookbehind assertions are zero-width assertions, they don't consume any characters.
+    * lookahead is used in the end of the regex.
+        * bar(?=bar)     finds the 1st bar ("bar" which has "bar" after it)  
+        * bar(?!bar)     finds the 2nd bar ("bar" which does not have "bar" after it)
+    * lookbehind is used in the beginning of the regex.
+        * (?<=foo)bar    finds the 1st bar ("bar" which has "foo" before it)
+        * (?<!foo)bar    finds the 2nd bar ("bar" which does not have "foo" before it)
