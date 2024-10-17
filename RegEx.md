@@ -61,3 +61,11 @@ Source: https://www.youtube.com/watch?v=m2zlSAsePNg&list=WL&index=37&t=569s
     * lookbehind is used in the beginning of the regex.
         * (?<=foo)bar    finds the 1st bar ("bar" which has "foo" before it)
         * (?<!foo)bar    finds the 2nd bar ("bar" which does not have "foo" before it)
+* Capturing Groups: treat multiple characters as a single unit.
+    * `()` &rarr; Capturing group.
+        * (\d{1,2})-(\d{1,2})-(\d{4}) &rarr; Matches a date in the format `dd-mm-yyyy`.
+    * `\1`, `\2`, etc. &rarr; Backreferences. reuse the value of a capturing group.
+        * (a|b|cd)\1 &rarr; Matches `aa`, `bb`, or `cdcd`.
+    * `(?:)` &rarr; Non-capturing group.
+    * non-capturing group is used when you don't want to capture the group.
+        * (?:\d{1,2}-){2}(\d{4}):\1 &rarr; Matches a date like 31-08-1994:1994, 1-3-2010:2010.
