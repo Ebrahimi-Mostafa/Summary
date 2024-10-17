@@ -13,6 +13,7 @@ Welcome to my summary repository! This repository contains summaries of various 
 - [Git.md](Git.md) :octocat:
 - [MATLAB.md](MATLAB.md) :chart_with_upwards_trend:
 - [Markdown.md](Markdown.md) :pencil:
+- [RegEx.md](RegEx.md) :abc:
 - [SQL.md](SQL.md) :floppy_disk:
 - [Terminal.md](Terminal.md) :computer:
 - [Tmux.md](Tmux.md) :pager:
