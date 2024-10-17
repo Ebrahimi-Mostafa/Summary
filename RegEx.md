@@ -4,12 +4,12 @@ Source: [YouTube Video](https://www.youtube.com/watch?v=m2zlSAsePNg&list=WL&inde
 ## Table of Contents
 1. [Regex Syntax](#regex-syntax)
 2. [Regex Cheatsheet](#regex-cheatsheet)
-    1. [Anchors](#anchors)
-    2. [Character Classes](#character-classes)
-    3. [Quantifiers](#quantifiers)
-    4. [Metacharacters](#metacharacters)
-    5. [Assertions (Lookahead/Lookbehind)](#assertions-lookaheadlookbehind)
-    6. [Groups and Backreferences](#groups-and-backreferences)
+    1. [Anchors](#1-anchors)
+    2. [Character Classes](#2-character-classes)
+    3. [Quantifiers](#3-quantifiers)
+    4. [Metacharacters](#4-metacharacters)
+    5. [Assertions (Lookahead/Lookbehind)](#5-assertions-lookaheadlookbehind)
+    6. [Groups and Backreferences](#6-groups-and-backreferences)
 
 ## Regex Syntax
 A regular expression (regex) consists of a pattern enclosed between two forward slashes and may have optional flags.  
