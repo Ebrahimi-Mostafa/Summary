@@ -9,7 +9,6 @@
 Welcome to my summary repository! This repository contains summaries of various topics and subjects that I have created. Each summary provides a concise overview of the main points and key concepts related to the respective topic. :books:
 
 ### List of Summaries :scroll:
-- [Computer_Network.md](Computer_Network.md) :globe_with_meridians:
 - [Docker.md](Docker.md) :whale:
 - [Git.md](Git.md) :octocat:
 - [MATLAB.md](MATLAB.md) :chart_with_upwards_trend:
