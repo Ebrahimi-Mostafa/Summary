@@ -4,6 +4,8 @@
 1. [Introduction](#introduction)
 2. [Installation](#installation)
 3. [Basic document](#basic-document)
+4. [Common Mathematical Notation](#common-mathematical-notation)
+
 
 ## Introduction
 LaTeX is a typesetting system commonly used for technical and scientific documentation.
@@ -18,15 +20,14 @@ brew install --cask mactex
 * Install the _LaTeX Workshop_ extension in VS Code.
 
 ## Basic document
-```latex
-\documentclass{article}
-\begin{document}
-Hello, world!
-\end{document}
-```
+* A basic LaTeX document:
+    ```latex
+    \documentclass{article}
+    \begin{document}
+    Hello, world!
+    \end{document}
+    ```
 
-
-## Fundamental LaTeX Syntax
 * `LaTeX`:  
     It starts and ends with a backslash. It shows LaTeX logo.
     ```latex
@@ -52,3 +53,24 @@ Hello, world!
     Hello, world!\\
     This is a new line.
     ```
+
+* `Math mode`:  
+    ```latex
+    $x^2 + y^2 = z^2$
+    ```
+    output:  
+    $x^2 + y^2 = z^2$
+
+    * If you write the equation in a sentence, and you want to display it in a line(not part in a line, another part in next line), you can use `{$equation$}`.
+        ```latex
+        The equation {$x^2 + y^2 = z^2$} is the Pythagorean theorem.
+        ```
+    * Show the equation in a _separate_ line:
+        ```latex
+        The equation $$x^2 + y^2 = z^2$$ is the Pythagorean theorem.
+        ```
+        output:  
+        The equation $$x^2 + y^2 = z^2$$ is the Pythagorean theorem.
+
+
+## Common Mathematical Notation
