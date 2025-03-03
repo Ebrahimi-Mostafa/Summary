@@ -27,7 +27,7 @@ Hello, world!
 
 
 ## Fundamental LaTeX Syntax
-* LaTeX:  
+* `LaTeX`:  
     It starts and ends with a backslash. It shows LaTeX logo.
     ```latex
     \LaTeX\
@@ -37,7 +37,7 @@ Hello, world!
 
     The second backslash is used to show a space after the logo.
 
-* New line:  
+* `New line`:  
     * Hard return: add blank line between lines. It will be rendered as a new paragraph.  
     ```latex
     Hello, world!
