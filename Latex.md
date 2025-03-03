@@ -58,11 +58,11 @@ Source: [YouTube Video](https://www.youtube.com/watch?v=ydOTMQC7np0)
     Output:  
     $x^2 + y^2 = z^2$
 
-    * If you write the equation in a sentence, and you want to display it in a line(not part in a line, another part in next line), you can use `{$equation$}`.
+    * To ensure an equation remains on a single line within a sentence, use `{$equation$}`.
         ```latex
         The equation {$x^2 + y^2 = z^2$} is the Pythagorean theorem.
         ```
-    * Show the equation in a _separate_ line:
+    * Display the equation on a _separate_ line:
         ```latex
         The equation $$x^2 + y^2 = z^2$$ is the Pythagorean theorem.
         ```
