@@ -98,3 +98,12 @@ Source: [YouTube Video](https://www.youtube.com/watch?v=ydOTMQC7np0)
     $$a_1, a_2, ..., a_n$$
     $$a_1, a_2, \ldots, a_n$$
     $$a_1, a_2, \cdots, a_n$$
+
+* Greek Letters:
+    ```latex
+    $$\alpha, \beta, \gamma, \delta, \pi, \sigma$$
+    $$\Alpha, \Beta, \Gamma, \Delta, \Pi, \Sigma$$
+    ```
+    Output:
+    $$\alpha, \beta, \gamma, \delta, \pi, \sigma$$
+    $$\Alpha, \Beta, \Gamma, \Delta, \Pi, \Sigma$$
