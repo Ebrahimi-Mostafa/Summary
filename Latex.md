@@ -115,3 +115,19 @@ Source: [YouTube Video](https://www.youtube.com/watch?v=ydOTMQC7np0)
     ```
     Output:
     $$\sin x, \cos x, \tan x, \arcsin x$$
+
+* __Log Functions__
+    ```latex
+    $$\log x, \ln x, \log_2 x$$
+    ```
+    Output:
+    $$\log x, \ln x, \log_2 x$$
+
+* __Root__
+    ```latex
+    $$\sqrt{x}$$
+    $$\sqrt[3]{x}$$
+    ```
+    Output:
+    $$\sqrt{x}$$
+    $$\sqrt[3]{x}$$
