@@ -70,3 +70,31 @@ Source: [YouTube Video](https://www.youtube.com/watch?v=ydOTMQC7np0)
         The equation $$x^2 + y^2 = z^2$$ is the Pythagorean theorem.
 
 ## Common Mathematical Notation
+
+* Superscript & Subscript: by default, _only_ the next character is considered. 
+* For multiple characters, enclose them in curly brackets.
+    ```latex
+    $$2x^34$$
+    $$2x^{34}$$
+
+    $$x_12$$
+    $$x_{12}$$
+    ```
+
+    Output:
+    $$2x^34$$  
+    $$2x^{34}$$
+
+    $$x_12$$
+    $$x_{12}$$
+
+* Sequence:
+    ```latex  
+    $$a_1, a_2, ..., a_n$$
+    $$a_1, a_2, \ldots, a_n$$
+    $$a_1, a_2, \cdots, a_n$$
+    ```
+    Output:
+    $$a_1, a_2, ..., a_n$$
+    $$a_1, a_2, \ldots, a_n$$
+    $$a_1, a_2, \cdots, a_n$$
