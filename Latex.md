@@ -27,7 +27,7 @@ Source: [YouTube Video](https://www.youtube.com/watch?v=ydOTMQC7np0)
     \end{document}
     ```
 
-* `LaTeX` Logo:
+* __`LaTeX` Logo__
     ```latex
     \LaTeX\
     ```
@@ -36,7 +36,7 @@ Source: [YouTube Video](https://www.youtube.com/watch?v=ydOTMQC7np0)
 
     The second backslash is used to show a space after the logo.
 
-* New Line:
+* __New Line__
     * Hard return:  
         Add a blank line between lines. It will be rendered as a new paragraph.
         ```latex
@@ -51,7 +51,7 @@ Source: [YouTube Video](https://www.youtube.com/watch?v=ydOTMQC7np0)
         This is a new line.
         ```
 
-* Math Mode:
+* __Math Mode__
     ```latex
     $x^2 + y^2 = z^2$
     ```
