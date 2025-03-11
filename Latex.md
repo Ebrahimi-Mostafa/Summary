@@ -69,6 +69,14 @@ Source: [YouTube Video](https://www.youtube.com/watch?v=ydOTMQC7np0)
         Output:  
         The equation $$x^2 + y^2 = z^2$$ is the Pythagorean theorem.
 
+        * __Page Numbering__
+            * To remove page numbering &rarr; `\pagestyle{empty}`.
+                ```latex
+                \documentclass[]{article}
+                \pagestyle{empty}
+                ...
+                ```
+                
 ## Common Mathematical Notation
 
 * __Superscript & Subscript__
