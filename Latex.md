@@ -71,8 +71,9 @@ Source: [YouTube Video](https://www.youtube.com/watch?v=ydOTMQC7np0)
 
 ## Common Mathematical Notation
 
-* Superscript & Subscript: by default, _only_ the next character is considered. 
-* For multiple characters, enclose them in curly brackets.
+* __Superscript & Subscript__
+    * by default, _only_ the next character is considered. 
+    * For multiple characters, enclose them in curly brackets.
     ```latex
     $$2x^34$$
     $$2x^{34}$$
@@ -88,7 +89,7 @@ Source: [YouTube Video](https://www.youtube.com/watch?v=ydOTMQC7np0)
     $$x_12$$
     $$x_{12}$$
 
-* Sequence:
+* __Sequence__
     ```latex  
     $$a_1, a_2, ..., a_n$$
     $$a_1, a_2, \ldots, a_n$$
@@ -99,7 +100,7 @@ Source: [YouTube Video](https://www.youtube.com/watch?v=ydOTMQC7np0)
     $$a_1, a_2, \ldots, a_n$$
     $$a_1, a_2, \cdots, a_n$$
 
-* Greek Letters:
+* __Greek Letters__
     ```latex
     $$\alpha, \beta, \gamma, \delta, \pi, \sigma$$
     $$\Alpha, \Beta, \Gamma, \Delta, \Pi, \Sigma$$
@@ -107,3 +108,10 @@ Source: [YouTube Video](https://www.youtube.com/watch?v=ydOTMQC7np0)
     Output:
     $$\alpha, \beta, \gamma, \delta, \pi, \sigma$$
     $$\Alpha, \Beta, \Gamma, \Delta, \Pi, \Sigma$$
+
+* __Trig Functions__
+    ```latex
+    $$\sin x, \cos x, \tan x, \arcsin x$$
+    ```
+    Output:
+    $$\sin x, \cos x, \tan x, \arcsin x$$
