@@ -5,6 +5,7 @@
 2. [Installation](#installation)
 3. [Basic Document](#basic-document)
 4. [Common Mathematical Notation](#common-mathematical-notation)
+5. [Brackets, Tables and Arrays](#brackets-tables-and-arrays)
 
 ## Introduction
 LaTeX is a typesetting system commonly used for technical and scientific documentation.
@@ -164,3 +165,5 @@ Source: [YouTube Video](https://www.youtube.com/watch?v=ydOTMQC7np0)
     About $\frac{3}{5}$ of glass is full. [6pt]
     About $\displaystyle\frac{3}{5}$ of glass is full.
     ```
+
+## Brackets, Tables and Arrays
