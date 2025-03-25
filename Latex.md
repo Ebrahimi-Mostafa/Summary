@@ -144,3 +144,16 @@ Source: [YouTube Video](https://www.youtube.com/watch?v=ydOTMQC7np0)
     Output:
     $$\sqrt{x}$$
     $$\sqrt[3]{x}$$
+
+* __Fractions__
+    ```latex
+    $$\frac{3}{5}$$ % Display mode
+    About $\frac{3}{5}$ of glass is full. % Inline mode
+
+    About $\displaystyle\frac{3}{5}$ of glass is full. % Add Display mode in Inline mode(Increase size)
+    ```
+    Output:
+    $$\frac{3}{5}$$
+    About $\frac{3}{5}$ of glass is full.
+    
+    About $\displaystyle\frac{3}{5}$ of glass is full.
