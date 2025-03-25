@@ -79,6 +79,11 @@ Source: [YouTube Video](https://www.youtube.com/watch?v=ydOTMQC7np0)
                 
 ## Common Mathematical Notation
 
+> __Note:__ Mathematical modes:
+> * __Inline Math Mode__: Used to write formulas that are part of a paragraph.(e.g. $x^2 + y^2 = z^2$)
+> * __Display Math Mode__: Used to write expressions that are not part of a paragraph, and are therefore put on separate lines. (e.g. $$x^2 + y^2 = z^2$$)
+
+
 * __Superscript & Subscript__
     * by default, _only_ the next character is considered. 
     * For multiple characters, enclose them in curly brackets.
