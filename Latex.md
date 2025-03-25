@@ -155,5 +155,12 @@ Source: [YouTube Video](https://www.youtube.com/watch?v=ydOTMQC7np0)
     Output:
     $$\frac{3}{5}$$
     About $\frac{3}{5}$ of glass is full.
-    
+
     About $\displaystyle\frac{3}{5}$ of glass is full.
+
+    > __Note:__
+    You can [6pt] to increase the space between two lines. (pt = point)
+    ```latex
+    About $\frac{3}{5}$ of glass is full. [6pt]
+    About $\displaystyle\frac{3}{5}$ of glass is full.
+    ```
