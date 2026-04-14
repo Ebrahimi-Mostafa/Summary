@@ -6,7 +6,7 @@ Source: https://www.youtube.com/watch?v=_jKNnHROiC0&t=910s
 * [Part 1](#part-1)
 * [Part 2](#part-2)
 * [Part 3](#part-3)
-
+* [Beyond the Tutorial](#beyond-the-tutorial)
 
 <a id="part-1"></a>
 ## Part 1
@@ -189,3 +189,34 @@ docker run --network <network_name> <image_name>
 ```
 
 > **Note:** When we create a network, docker will create a DNS server for that network. So, we can use the `container name` as the `host name` to communicate with that container.
+
+
+<a id="beyond-the-tutorial"></a>
+## Beyond the Tutorial
+
+*   **Detach from a container without stopping it:**
+    If you are inside a container's terminal and want to exit without stopping the container, use the key combination `Ctrl+P` followed by `Ctrl+Q`. This detaches your terminal session while the container continues to run in the background.
+
+*   **Stop a running container:**
+    To stop a container that is currently running, use the `docker stop` command followed by the container ID or name:
+    ```bash
+    docker stop <container_id_or_name>
+    ```
+
+*   **See a list of stopped containers:**
+    As you noted earlier, `docker ps -a` shows all containers, including stopped ones. To specifically filter and see only stopped containers, you can use:
+    ```bash
+    docker ps -a -f status=exited
+    ```
+
+*   **Start a stopped container and get a terminal:**
+    If you have a stopped container, you can start it again and then attach your terminal to it:
+    1.  **Start the container:**
+        ```bash
+        docker start <container_id_or_name>
+        ```
+    2.  **Attach your terminal to the running container:**
+        ```bash
+        docker attach <container_id_or_name>
+        ```
+        Alternatively, if you want to run a new command (like a shell) inside the already running (but previously stopped) container, you can use `docker exec -it <container_id_or_name> sh` (or `bash` if available).
